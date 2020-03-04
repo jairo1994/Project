@@ -22,6 +22,20 @@ extension DetailViewController{
         labelTheNew.text = "Resorts nuevos"
         labelTheNew.font = UIFont.boldSystemFont(ofSize: 23)
         
+        collection = (UINib(nibName: "GenericRoundCollectionView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! GenericRoundCollectionView)
+        collection.translatesAutoresizingMaskIntoConstraints = false
+        self.scrollView.addSubview(collection)
+        
+        self.scrollView.addSubview(labelTheNew2)
+        labelTheNew2.translatesAutoresizingMaskIntoConstraints = false
+        labelTheNew2.textColor = GeneralService.primaryColor
+        labelTheNew2.text = "Tienes que ver"
+        labelTheNew2.font = UIFont.boldSystemFont(ofSize: 23)
+        
+        ovalCollection = (UINib(nibName: "SemiOvalGenericCollectionView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! SemiOvalGenericCollectionView)
+        ovalCollection.translatesAutoresizingMaskIntoConstraints = false
+        self.scrollView.addSubview(ovalCollection)
+        
         self.scrollView.addSubview(detailBtn)
         detailBtn.translatesAutoresizingMaskIntoConstraints = false
         detailBtn.backgroundColor = GeneralService.primaryColor
@@ -40,12 +54,37 @@ extension DetailViewController{
         buyNow.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         labelTheNew.topAnchor.constraint(equalTo: topImage.bottomAnchor).isActive = true
-        labelTheNew.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        labelTheNew.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
         labelTheNew.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
-        detailBtn.topAnchor.constraint(equalTo: labelTheNew.bottomAnchor, constant: 8).isActive = true
+        collection.topAnchor.constraint(equalTo: labelTheNew.bottomAnchor).isActive = true
+        collection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
+        collection.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        collection.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.2).isActive = true
+        
+        detailBtn.topAnchor.constraint(equalTo: collection.bottomAnchor, constant: 8).isActive = true
         detailBtn.centerXAnchor.constraint(equalTo: topImage.centerXAnchor).isActive = true
         detailBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        labelTheNew2.topAnchor.constraint(equalTo: detailBtn.bottomAnchor).isActive = true
+        labelTheNew2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
+        labelTheNew2.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        ovalCollection.topAnchor.constraint(equalTo: labelTheNew2.bottomAnchor, constant: 16).isActive = true
+        ovalCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
+        ovalCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        ovalCollection.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.3).isActive = true
+        
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.textColor = .white
+        label.text = "Womble the first component is the alpha not the last one. So#ff00ff00 has alpha 1 because of the ff at the beginning."
+        scrollView.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.topAnchor.constraint(equalTo: ovalCollection.bottomAnchor).isActive = true
+        label.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        label.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        label.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
     }
 
 }

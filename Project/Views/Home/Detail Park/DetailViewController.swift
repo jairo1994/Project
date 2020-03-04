@@ -22,6 +22,9 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     let detailBtn = Button.normalButton()
     let buyNow = Button.normalButton()
     let labelTheNew = UILabel()
+    let labelTheNew2 = UILabel()
+    var collection: GenericRoundCollectionView!
+    var ovalCollection: SemiOvalGenericCollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

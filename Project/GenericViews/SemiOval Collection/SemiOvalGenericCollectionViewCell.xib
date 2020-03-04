@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd-Medium.otf">
+            <string>AvenirLTStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SemiOvalGenericCollectionViewCell" id="gTV-IL-0wX" customClass="SemiOvalGenericCollectionViewCell" customModule="Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="237"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="237"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4l-Vw-Cvf">
+                        <rect key="frame" x="2" y="2" width="203" height="233"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park-1" translatesAutoresizingMaskIntoConstraints="NO" id="5JN-Dr-Cwr">
+                                <rect key="frame" x="0.0" y="0.0" width="203" height="233"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Grand Moon At Mon Palace Cancun The Grand Moon At Mon Palace Cancun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="V8u-4B-eNi">
+                                <rect key="frame" x="8" y="158" width="187" height="75"/>
+                                <fontDescription key="fontDescription" name="AvenirLTStd-Medium" family="Avenir LT Std" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5JN-Dr-Cwr" secondAttribute="bottom" id="9zB-SM-rUc"/>
+                            <constraint firstItem="5JN-Dr-Cwr" firstAttribute="top" secondItem="V4l-Vw-Cvf" secondAttribute="top" id="ANT-VV-2kW"/>
+                            <constraint firstItem="V8u-4B-eNi" firstAttribute="leading" secondItem="V4l-Vw-Cvf" secondAttribute="leading" constant="8" id="czT-Rb-pU2"/>
+                            <constraint firstItem="5JN-Dr-Cwr" firstAttribute="leading" secondItem="V4l-Vw-Cvf" secondAttribute="leading" id="eSI-ZY-zLV"/>
+                            <constraint firstAttribute="trailing" secondItem="V8u-4B-eNi" secondAttribute="trailing" constant="8" id="gZ0-GL-ZUu"/>
+                            <constraint firstAttribute="bottom" secondItem="V8u-4B-eNi" secondAttribute="bottom" id="gjh-wW-eF6"/>
+                            <constraint firstAttribute="trailing" secondItem="5JN-Dr-Cwr" secondAttribute="trailing" id="m8b-Lm-aT0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="V4l-Vw-Cvf" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="2" id="EqJ-aO-cF4"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="V4l-Vw-Cvf" secondAttribute="trailing" constant="2" id="QtX-SI-EbS"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="V4l-Vw-Cvf" secondAttribute="bottom" constant="2" id="Ucr-py-lD9"/>
+                <constraint firstItem="V4l-Vw-Cvf" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="2" id="Zlj-nw-aeh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="370" height="290"/>
+            <connections>
+                <outlet property="image" destination="5JN-Dr-Cwr" id="oEl-iT-ouf"/>
+                <outlet property="imageContainer" destination="V4l-Vw-Cvf" id="vYo-47-0Bj"/>
+                <outlet property="label" destination="V8u-4B-eNi" id="5mO-ND-5OJ"/>
+            </connections>
+            <point key="canvasLocation" x="607.20000000000005" y="197.45127436281859"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="park-1" width="1920" height="730"/>
+    </resources>
+</document>

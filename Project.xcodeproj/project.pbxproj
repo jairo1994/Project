@@ -19,7 +19,6 @@
 		2D1154F02410106200499AEB /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154C92410106200499AEB /* ArcView.swift */; };
 		2D1154F12410106200499AEB /* UIColor+hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CA2410106200499AEB /* UIColor+hexadecimal.swift */; };
 		2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CB2410106200499AEB /* UITextView+Attributes.swift */; };
-		2D1154F32410106200499AEB /* GenericScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CD2410106200499AEB /* GenericScrollViewController.swift */; };
 		2D1154F42410106200499AEB /* HiddenBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CE2410106200499AEB /* HiddenBarViewController.swift */; };
 		2D1154F52410106200499AEB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154D02410106200499AEB /* Config.swift */; };
 		2D1154F62410106200499AEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154D52410106200499AEB /* HomeViewController.swift */; };
@@ -36,7 +35,15 @@
 		2D1155042410106200499AEB /* ParkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EC2410106200499AEB /* ParkModel.swift */; };
 		2D1155052410106200499AEB /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154ED2410106200499AEB /* ActivityModel.swift */; };
 		2DFA87C624101CB800200D05 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87C524101CB800200D05 /* Button.swift */; };
-		2DFA87C82410221700200D05 /* GenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87C72410221700200D05 /* GenericCollectionViewController.swift */; };
+		2DFA87CD241032A300200D05 /* GenericRoundCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87CB241032A300200D05 /* GenericRoundCollectionView.swift */; };
+		2DFA87CE241032A300200D05 /* GenericRoundCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87CC241032A300200D05 /* GenericRoundCollectionView.xib */; };
+		2DFA87D12410357B00200D05 /* GenericCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87CF2410357B00200D05 /* GenericCollectionViewCell.xib */; };
+		2DFA87D22410357B00200D05 /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87D02410357B00200D05 /* GenericCollectionViewCell.swift */; };
+		2DFA87D4241036EF00200D05 /* GenericScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87D3241036EE00200D05 /* GenericScrollViewController.swift */; };
+		2DFA87DB2410393F00200D05 /* SemiOvalGenericCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87D72410393E00200D05 /* SemiOvalGenericCollectionViewCell.xib */; };
+		2DFA87DC2410393F00200D05 /* SemiOvalGenericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87D82410393E00200D05 /* SemiOvalGenericCollectionView.swift */; };
+		2DFA87DD2410393F00200D05 /* SemiOvalGenericCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87D92410393E00200D05 /* SemiOvalGenericCollectionView.xib */; };
+		2DFA87DE2410393F00200D05 /* SemiOvalGenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87DA2410393E00200D05 /* SemiOvalGenericCollectionViewCell.swift */; };
 		388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +62,6 @@
 		2D1154C92410106200499AEB /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		2D1154CA2410106200499AEB /* UIColor+hexadecimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hexadecimal.swift"; sourceTree = "<group>"; };
 		2D1154CB2410106200499AEB /* UITextView+Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Attributes.swift"; sourceTree = "<group>"; };
-		2D1154CD2410106200499AEB /* GenericScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericScrollViewController.swift; sourceTree = "<group>"; };
 		2D1154CE2410106200499AEB /* HiddenBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenBarViewController.swift; sourceTree = "<group>"; };
 		2D1154D02410106200499AEB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		2D1154D52410106200499AEB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +78,15 @@
 		2D1154EC2410106200499AEB /* ParkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkModel.swift; sourceTree = "<group>"; };
 		2D1154ED2410106200499AEB /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		2DFA87C524101CB800200D05 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		2DFA87C72410221700200D05 /* GenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewController.swift; sourceTree = "<group>"; };
+		2DFA87CB241032A300200D05 /* GenericRoundCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRoundCollectionView.swift; sourceTree = "<group>"; };
+		2DFA87CC241032A300200D05 /* GenericRoundCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericRoundCollectionView.xib; sourceTree = "<group>"; };
+		2DFA87CF2410357B00200D05 /* GenericCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericCollectionViewCell.xib; sourceTree = "<group>"; };
+		2DFA87D02410357B00200D05 /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DFA87D3241036EE00200D05 /* GenericScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericScrollViewController.swift; sourceTree = "<group>"; };
+		2DFA87D72410393E00200D05 /* SemiOvalGenericCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SemiOvalGenericCollectionViewCell.xib; sourceTree = "<group>"; };
+		2DFA87D82410393E00200D05 /* SemiOvalGenericCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiOvalGenericCollectionView.swift; sourceTree = "<group>"; };
+		2DFA87D92410393E00200D05 /* SemiOvalGenericCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SemiOvalGenericCollectionView.xib; sourceTree = "<group>"; };
+		2DFA87DA2410393E00200D05 /* SemiOvalGenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiOvalGenericCollectionViewCell.swift; sourceTree = "<group>"; };
 		82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 		9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,10 +174,11 @@
 		2D1154CC2410106200499AEB /* GenericViews */ = {
 			isa = PBXGroup;
 			children = (
-				2D1154CD2410106200499AEB /* GenericScrollViewController.swift */,
+				2DFA87D52410389700200D05 /* RoundCollection */,
+				2DFA87D6241038EB00200D05 /* SemiOval Collection */,
+				2DFA87D3241036EE00200D05 /* GenericScrollViewController.swift */,
 				2D1154CE2410106200499AEB /* HiddenBarViewController.swift */,
 				2DFA87C524101CB800200D05 /* Button.swift */,
-				2DFA87C72410221700200D05 /* GenericCollectionViewController.swift */,
 			);
 			path = GenericViews;
 			sourceTree = "<group>";
@@ -190,11 +205,11 @@
 		2D1154D22410106200499AEB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2DFA87C424101BBD00200D05 /* Detail Activity */,
+				2D1154D92410106200499AEB /* Detail Park */,
 				2D1154D52410106200499AEB /* HomeViewController.swift */,
 				2D1154D62410106200499AEB /* ParckCollectionViewCell.swift */,
 				2D1154D72410106200499AEB /* ParckCollectionViewCell.xib */,
-				2DFA87C424101BBD00200D05 /* Detail Activity */,
-				2D1154D92410106200499AEB /* Detail Park */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +272,28 @@
 			children = (
 			);
 			path = "Detail Activity";
+			sourceTree = "<group>";
+		};
+		2DFA87D52410389700200D05 /* RoundCollection */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA87CB241032A300200D05 /* GenericRoundCollectionView.swift */,
+				2DFA87CC241032A300200D05 /* GenericRoundCollectionView.xib */,
+				2DFA87D02410357B00200D05 /* GenericCollectionViewCell.swift */,
+				2DFA87CF2410357B00200D05 /* GenericCollectionViewCell.xib */,
+			);
+			path = RoundCollection;
+			sourceTree = "<group>";
+		};
+		2DFA87D6241038EB00200D05 /* SemiOval Collection */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA87D82410393E00200D05 /* SemiOvalGenericCollectionView.swift */,
+				2DFA87D92410393E00200D05 /* SemiOvalGenericCollectionView.xib */,
+				2DFA87DA2410393E00200D05 /* SemiOvalGenericCollectionViewCell.swift */,
+				2DFA87D72410393E00200D05 /* SemiOvalGenericCollectionViewCell.xib */,
+			);
+			path = "SemiOval Collection";
 			sourceTree = "<group>";
 		};
 		6339CEA4D702B274F2FA34DF /* Frameworks */ = {
@@ -329,8 +366,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1154F82410106200499AEB /* ParckCollectionViewCell.xib in Resources */,
+				2DFA87DB2410393F00200D05 /* SemiOvalGenericCollectionViewCell.xib in Resources */,
+				2DFA87DD2410393F00200D05 /* SemiOvalGenericCollectionView.xib in Resources */,
 				2D1154BE24100FC600499AEB /* LaunchScreen.storyboard in Resources */,
 				2D1154BB24100FC600499AEB /* Assets.xcassets in Resources */,
+				2DFA87CE241032A300200D05 /* GenericRoundCollectionView.xib in Resources */,
+				2DFA87D12410357B00200D05 /* GenericCollectionViewCell.xib in Resources */,
 				2D1154B624100FC500499AEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +444,8 @@
 			files = (
 				2D1154FB2410106200499AEB /* AboutParkViewController.swift in Sources */,
 				2D1155042410106200499AEB /* ParkModel.swift in Sources */,
+				2DFA87D22410357B00200D05 /* GenericCollectionViewCell.swift in Sources */,
+				2DFA87DE2410393F00200D05 /* SemiOvalGenericCollectionViewCell.swift in Sources */,
 				2D1154EF2410106200499AEB /* UIView+extension.swift in Sources */,
 				2D1154F12410106200499AEB /* UIColor+hexadecimal.swift in Sources */,
 				2D1154F72410106200499AEB /* ParckCollectionViewCell.swift in Sources */,
@@ -412,20 +455,21 @@
 				2D1155022410106200499AEB /* ProfileViewController.swift in Sources */,
 				2D1154B124100FC500499AEB /* SceneDelegate.swift in Sources */,
 				2D1155052410106200499AEB /* ActivityModel.swift in Sources */,
+				2DFA87CD241032A300200D05 /* GenericRoundCollectionView.swift in Sources */,
 				2D1154F52410106200499AEB /* Config.swift in Sources */,
-				2DFA87C82410221700200D05 /* GenericCollectionViewController.swift in Sources */,
 				2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */,
 				2D1154EE2410106200499AEB /* GeneralService.swift in Sources */,
 				2D1154F02410106200499AEB /* ArcView.swift in Sources */,
 				2DFA87C624101CB800200D05 /* Button.swift in Sources */,
 				2D1154B924100FC500499AEB /* Project.xcdatamodeld in Sources */,
 				2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */,
+				2DFA87D4241036EF00200D05 /* GenericScrollViewController.swift in Sources */,
 				2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */,
 				2D1155012410106200499AEB /* SearchViewController.swift in Sources */,
-				2D1154F32410106200499AEB /* GenericScrollViewController.swift in Sources */,
 				2D1154FA2410106200499AEB /* DetailViewController.swift in Sources */,
 				2D1154F62410106200499AEB /* HomeViewController.swift in Sources */,
 				2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */,
+				2DFA87DC2410393F00200D05 /* SemiOvalGenericCollectionView.swift in Sources */,
 				2D1154F42410106200499AEB /* HiddenBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
