@@ -19,8 +19,8 @@ protocol ChangeViewsProtocol: class {
 
 class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     var deatilPark = ParkModel()
-    let detailBtn = UIButton(type: .system)
-    let buyNow = UIButton(type: .system)
+    let detailBtn = Button.normalButton()
+    let buyNow = Button.normalButton()
     let labelTheNew = UILabel()
     
     override func viewDidLoad() {

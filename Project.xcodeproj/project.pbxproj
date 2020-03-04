@@ -35,6 +35,8 @@
 		2D1155032410106200499AEB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EB2410106200499AEB /* CategoryModel.swift */; };
 		2D1155042410106200499AEB /* ParkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EC2410106200499AEB /* ParkModel.swift */; };
 		2D1155052410106200499AEB /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154ED2410106200499AEB /* ActivityModel.swift */; };
+		2DFA87C624101CB800200D05 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87C524101CB800200D05 /* Button.swift */; };
+		2DFA87C82410221700200D05 /* GenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87C72410221700200D05 /* GenericCollectionViewController.swift */; };
 		388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		2D1154EB2410106200499AEB /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		2D1154EC2410106200499AEB /* ParkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkModel.swift; sourceTree = "<group>"; };
 		2D1154ED2410106200499AEB /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		2DFA87C524101CB800200D05 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		2DFA87C72410221700200D05 /* GenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewController.swift; sourceTree = "<group>"; };
 		82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 		9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +162,8 @@
 			children = (
 				2D1154CD2410106200499AEB /* GenericScrollViewController.swift */,
 				2D1154CE2410106200499AEB /* HiddenBarViewController.swift */,
+				2DFA87C524101CB800200D05 /* Button.swift */,
+				2DFA87C72410221700200D05 /* GenericCollectionViewController.swift */,
 			);
 			path = GenericViews;
 			sourceTree = "<group>";
@@ -184,38 +190,23 @@
 		2D1154D22410106200499AEB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2D1154D32410106200499AEB /* DetailAcitivty */,
-				2D1154D42410106200499AEB /* Home */,
-				2D1154D92410106200499AEB /* DetailPark */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		2D1154D32410106200499AEB /* DetailAcitivty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DetailAcitivty;
-			sourceTree = "<group>";
-		};
-		2D1154D42410106200499AEB /* Home */ = {
-			isa = PBXGroup;
-			children = (
 				2D1154D52410106200499AEB /* HomeViewController.swift */,
 				2D1154D62410106200499AEB /* ParckCollectionViewCell.swift */,
 				2D1154D72410106200499AEB /* ParckCollectionViewCell.xib */,
+				2DFA87C424101BBD00200D05 /* Detail Activity */,
+				2D1154D92410106200499AEB /* Detail Park */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		2D1154D92410106200499AEB /* DetailPark */ = {
+		2D1154D92410106200499AEB /* Detail Park */ = {
 			isa = PBXGroup;
 			children = (
 				2D1154DB2410106200499AEB /* About */,
 				2D1154DA2410106200499AEB /* DetailViewController.swift */,
 				2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */,
 			);
-			path = DetailPark;
+			path = "Detail Park";
 			sourceTree = "<group>";
 		};
 		2D1154DB2410106200499AEB /* About */ = {
@@ -259,6 +250,13 @@
 				2D1154ED2410106200499AEB /* ActivityModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2DFA87C424101BBD00200D05 /* Detail Activity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Detail Activity";
 			sourceTree = "<group>";
 		};
 		6339CEA4D702B274F2FA34DF /* Frameworks */ = {
@@ -415,9 +413,11 @@
 				2D1154B124100FC500499AEB /* SceneDelegate.swift in Sources */,
 				2D1155052410106200499AEB /* ActivityModel.swift in Sources */,
 				2D1154F52410106200499AEB /* Config.swift in Sources */,
+				2DFA87C82410221700200D05 /* GenericCollectionViewController.swift in Sources */,
 				2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */,
 				2D1154EE2410106200499AEB /* GeneralService.swift in Sources */,
 				2D1154F02410106200499AEB /* ArcView.swift in Sources */,
+				2DFA87C624101CB800200D05 /* Button.swift in Sources */,
 				2D1154B924100FC500499AEB /* Project.xcdatamodeld in Sources */,
 				2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */,
 				2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */,

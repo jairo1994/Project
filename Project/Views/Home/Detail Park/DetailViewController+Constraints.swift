@@ -13,12 +13,8 @@ extension DetailViewController{
     func addMyViews(){
         
         self.scrollView.addSubview(buyNow)
-        buyNow.translatesAutoresizingMaskIntoConstraints = false
-        buyNow.backgroundColor = GeneralService.primaryColor
-        buyNow.tintColor = .white
-        buyNow.setTitle("Showme the resort", for: .normal)
+        buyNow.setTitle("COMPRAR AHORA", for: .normal)
         buyNow.addTarget(self, action: #selector(showMeDetailView), for: .touchUpInside)
-        buyNow.imageEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
         
         self.scrollView.addSubview(labelTheNew)
         labelTheNew.translatesAutoresizingMaskIntoConstraints = false
@@ -49,8 +45,7 @@ extension DetailViewController{
         
         detailBtn.topAnchor.constraint(equalTo: labelTheNew.bottomAnchor, constant: 8).isActive = true
         detailBtn.centerXAnchor.constraint(equalTo: topImage.centerXAnchor).isActive = true
-        detailBtn.widthAnchor.constraint(equalToConstant: 60).isActive = true
-        detailBtn.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        detailBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 
 }
