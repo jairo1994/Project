@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,28 @@
 		2D1154B924100FC500499AEB /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154B724100FC500499AEB /* Project.xcdatamodeld */; };
 		2D1154BB24100FC600499AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1154BA24100FC600499AEB /* Assets.xcassets */; };
 		2D1154BE24100FC600499AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1154BC24100FC600499AEB /* LaunchScreen.storyboard */; };
+		2D1154EE2410106200499AEB /* GeneralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154C62410106200499AEB /* GeneralService.swift */; };
+		2D1154EF2410106200499AEB /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154C82410106200499AEB /* UIView+extension.swift */; };
+		2D1154F02410106200499AEB /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154C92410106200499AEB /* ArcView.swift */; };
+		2D1154F12410106200499AEB /* UIColor+hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CA2410106200499AEB /* UIColor+hexadecimal.swift */; };
+		2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CB2410106200499AEB /* UITextView+Attributes.swift */; };
+		2D1154F32410106200499AEB /* GenericScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CD2410106200499AEB /* GenericScrollViewController.swift */; };
+		2D1154F42410106200499AEB /* HiddenBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154CE2410106200499AEB /* HiddenBarViewController.swift */; };
+		2D1154F52410106200499AEB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154D02410106200499AEB /* Config.swift */; };
+		2D1154F62410106200499AEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154D52410106200499AEB /* HomeViewController.swift */; };
+		2D1154F72410106200499AEB /* ParckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154D62410106200499AEB /* ParckCollectionViewCell.swift */; };
+		2D1154F82410106200499AEB /* ParckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1154D72410106200499AEB /* ParckCollectionViewCell.xib */; };
+		2D1154FA2410106200499AEB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DA2410106200499AEB /* DetailViewController.swift */; };
+		2D1154FB2410106200499AEB /* AboutParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DC2410106200499AEB /* AboutParkViewController.swift */; };
+		2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */; };
+		2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */; };
+		2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E12410106200499AEB /* LikesViewController.swift */; };
+		2D1155012410106200499AEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E72410106200499AEB /* SearchViewController.swift */; };
+		2D1155022410106200499AEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E92410106200499AEB /* ProfileViewController.swift */; };
+		2D1155032410106200499AEB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EB2410106200499AEB /* CategoryModel.swift */; };
+		2D1155042410106200499AEB /* ParkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EC2410106200499AEB /* ParkModel.swift */; };
+		2D1155052410106200499AEB /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154ED2410106200499AEB /* ActivityModel.swift */; };
+		388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +48,30 @@
 		2D1154BA24100FC600499AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1154BD24100FC600499AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1154BF24100FC600499AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1154C62410106200499AEB /* GeneralService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralService.swift; sourceTree = "<group>"; };
+		2D1154C82410106200499AEB /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		2D1154C92410106200499AEB /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		2D1154CA2410106200499AEB /* UIColor+hexadecimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hexadecimal.swift"; sourceTree = "<group>"; };
+		2D1154CB2410106200499AEB /* UITextView+Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Attributes.swift"; sourceTree = "<group>"; };
+		2D1154CD2410106200499AEB /* GenericScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericScrollViewController.swift; sourceTree = "<group>"; };
+		2D1154CE2410106200499AEB /* HiddenBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenBarViewController.swift; sourceTree = "<group>"; };
+		2D1154D02410106200499AEB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2D1154D52410106200499AEB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D1154D62410106200499AEB /* ParckCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParckCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D1154D72410106200499AEB /* ParckCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParckCollectionViewCell.xib; sourceTree = "<group>"; };
+		2D1154DA2410106200499AEB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2D1154DC2410106200499AEB /* AboutParkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutParkViewController.swift; sourceTree = "<group>"; };
+		2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutParkViewController+Constraints.swift"; sourceTree = "<group>"; };
+		2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Constraints.swift"; sourceTree = "<group>"; };
+		2D1154E12410106200499AEB /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		2D1154E72410106200499AEB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2D1154E92410106200499AEB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2D1154EB2410106200499AEB /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		2D1154EC2410106200499AEB /* ParkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkModel.swift; sourceTree = "<group>"; };
+		2D1154ED2410106200499AEB /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
+		9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +79,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA9F57503703AF83ECF69E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */,
+				90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2D1154A224100FC500499AEB = {
 			isa = PBXGroup;
 			children = (
 				2D1154AD24100FC500499AEB /* Project */,
 				2D1154AC24100FC500499AEB /* Products */,
+				0AA9F57503703AF83ECF69E0 /* Pods */,
+				6339CEA4D702B274F2FA34DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +116,12 @@
 		2D1154AD24100FC500499AEB /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				2D1154CF2410106200499AEB /* Config */,
+				2D1154C72410106200499AEB /* Extensions */,
+				2D1154CC2410106200499AEB /* GenericViews */,
+				2D1154EA2410106200499AEB /* Models */,
+				2D1154C52410106200499AEB /* Services */,
+				2D1154D12410106200499AEB /* Views */,
 				2D1154AE24100FC500499AEB /* AppDelegate.swift */,
 				2D1154B024100FC500499AEB /* SceneDelegate.swift */,
 				2D1154B224100FC500499AEB /* ViewController.swift */,
@@ -70,6 +134,141 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
+		2D1154C52410106200499AEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154C62410106200499AEB /* GeneralService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D1154C72410106200499AEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154C82410106200499AEB /* UIView+extension.swift */,
+				2D1154C92410106200499AEB /* ArcView.swift */,
+				2D1154CA2410106200499AEB /* UIColor+hexadecimal.swift */,
+				2D1154CB2410106200499AEB /* UITextView+Attributes.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D1154CC2410106200499AEB /* GenericViews */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154CD2410106200499AEB /* GenericScrollViewController.swift */,
+				2D1154CE2410106200499AEB /* HiddenBarViewController.swift */,
+			);
+			path = GenericViews;
+			sourceTree = "<group>";
+		};
+		2D1154CF2410106200499AEB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154D02410106200499AEB /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2D1154D12410106200499AEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154D22410106200499AEB /* Home */,
+				2D1154E02410106200499AEB /* Likes */,
+				2D1154E62410106200499AEB /* Search */,
+				2D1154E82410106200499AEB /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D1154D22410106200499AEB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154D32410106200499AEB /* DetailAcitivty */,
+				2D1154D42410106200499AEB /* Home */,
+				2D1154D92410106200499AEB /* DetailPark */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2D1154D32410106200499AEB /* DetailAcitivty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailAcitivty;
+			sourceTree = "<group>";
+		};
+		2D1154D42410106200499AEB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154D52410106200499AEB /* HomeViewController.swift */,
+				2D1154D62410106200499AEB /* ParckCollectionViewCell.swift */,
+				2D1154D72410106200499AEB /* ParckCollectionViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2D1154D92410106200499AEB /* DetailPark */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154DB2410106200499AEB /* About */,
+				2D1154DA2410106200499AEB /* DetailViewController.swift */,
+				2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */,
+			);
+			path = DetailPark;
+			sourceTree = "<group>";
+		};
+		2D1154DB2410106200499AEB /* About */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154DC2410106200499AEB /* AboutParkViewController.swift */,
+				2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		2D1154E02410106200499AEB /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154E12410106200499AEB /* LikesViewController.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		2D1154E62410106200499AEB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154E72410106200499AEB /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2D1154E82410106200499AEB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154E92410106200499AEB /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2D1154EA2410106200499AEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D1154EB2410106200499AEB /* CategoryModel.swift */,
+				2D1154EC2410106200499AEB /* ParkModel.swift */,
+				2D1154ED2410106200499AEB /* ActivityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6339CEA4D702B274F2FA34DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1154C224100FC600499AEB /* Build configuration list for PBXNativeTarget "Project" */;
 			buildPhases = (
+				ABEE8DFAD52FB847FF158887 /* [CP] Check Pods Manifest.lock */,
 				2D1154A724100FC500499AEB /* Sources */,
 				2D1154A824100FC500499AEB /* Frameworks */,
 				2D1154A924100FC500499AEB /* Resources */,
+				58392AD998F15F8A2F018038 /* [CP] Embed Pods Frameworks */,
+				C90A20BE4A58F2D0D87F9FB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1154F82410106200499AEB /* ParckCollectionViewCell.xib in Resources */,
 				2D1154BE24100FC600499AEB /* LaunchScreen.storyboard in Resources */,
 				2D1154BB24100FC600499AEB /* Assets.xcassets in Resources */,
 				2D1154B624100FC500499AEB /* Main.storyboard in Resources */,
@@ -136,15 +339,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58392AD998F15F8A2F018038 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project/Pods-Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project/Pods-Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project/Pods-Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABEE8DFAD52FB847FF158887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90A20BE4A58F2D0D87F9FB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project/Pods-Project-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project/Pods-Project-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project/Pods-Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D1154A724100FC500499AEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1154FB2410106200499AEB /* AboutParkViewController.swift in Sources */,
+				2D1155042410106200499AEB /* ParkModel.swift in Sources */,
+				2D1154EF2410106200499AEB /* UIView+extension.swift in Sources */,
+				2D1154F12410106200499AEB /* UIColor+hexadecimal.swift in Sources */,
+				2D1154F72410106200499AEB /* ParckCollectionViewCell.swift in Sources */,
 				2D1154B324100FC500499AEB /* ViewController.swift in Sources */,
 				2D1154AF24100FC500499AEB /* AppDelegate.swift in Sources */,
+				2D1155032410106200499AEB /* CategoryModel.swift in Sources */,
+				2D1155022410106200499AEB /* ProfileViewController.swift in Sources */,
 				2D1154B124100FC500499AEB /* SceneDelegate.swift in Sources */,
+				2D1155052410106200499AEB /* ActivityModel.swift in Sources */,
+				2D1154F52410106200499AEB /* Config.swift in Sources */,
+				2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */,
+				2D1154EE2410106200499AEB /* GeneralService.swift in Sources */,
+				2D1154F02410106200499AEB /* ArcView.swift in Sources */,
 				2D1154B924100FC500499AEB /* Project.xcdatamodeld in Sources */,
+				2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */,
+				2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */,
+				2D1155012410106200499AEB /* SearchViewController.swift in Sources */,
+				2D1154F32410106200499AEB /* GenericScrollViewController.swift in Sources */,
+				2D1154FA2410106200499AEB /* DetailViewController.swift in Sources */,
+				2D1154F62410106200499AEB /* HomeViewController.swift in Sources */,
+				2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */,
+				2D1154F42410106200499AEB /* HiddenBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +568,7 @@
 		};
 		2D1154C324100FC600499AEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +587,7 @@
 		};
 		2D1154C424100FC600499AEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
