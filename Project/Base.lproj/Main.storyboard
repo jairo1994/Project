@@ -131,7 +131,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YZJ-hs-nar"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="user" selectedImage="tray.fill" catalog="system" id="x7m-B6-yDU" customClass="RAMAnimatedTabBarItem"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="user-light" selectedImage="user" id="x7m-B6-yDU" customClass="RAMAnimatedTabBarItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGL-kw-Cuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +163,7 @@
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="park-1" width="1920" height="730"/>
-        <image name="tray.fill" catalog="system" width="64" height="44"/>
         <image name="user" width="25" height="25"/>
+        <image name="user-light" width="25" height="25"/>
     </resources>
 </document>

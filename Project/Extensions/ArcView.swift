@@ -6,21 +6,13 @@
 //  Copyright © 2020 Movil. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-/**
- Para crear la curva en las vistas me apoye de esta referencia:
- */
-
 class ArcView: UIView {
-    
     var color: UIColor = UIColor.lightGray
-    
     override func draw(_ rect: CGRect) {
         let y:CGFloat = 60
         let curveTo:CGFloat = 0
-        
         let myBezier = UIBezierPath()
         myBezier.move(to: CGPoint(x: 0, y: y))
         myBezier.addQuadCurve(to: CGPoint(x: rect.width, y: y), controlPoint: CGPoint(x: rect.width / 2, y: curveTo))

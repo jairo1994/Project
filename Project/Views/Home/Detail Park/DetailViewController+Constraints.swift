@@ -87,5 +87,6 @@ extension DetailViewController{
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
     }
-
+    
+    
 }

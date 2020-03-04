@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GenericScrollViewController: HiddenBarViewController {
+class GenericScrollViewController: HiddenBarViewController, UIScrollViewDelegate {
     let scrollView = UIScrollView()
     let topHelperView = UIView()
     let curvedView = ArcView()
@@ -21,7 +21,7 @@ class GenericScrollViewController: HiddenBarViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        scrollView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -76,8 +76,45 @@ class GenericScrollViewController: HiddenBarViewController {
         curvedView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         curvedView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 1.8).isActive = true
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if !showBar{
+            show()
+        }else{
+            hide()
+        }
+    }
+    
+    private var showBar : Bool{
+        let frame = curvedView.convert(curvedView.bounds, to: nil)
+        guard let navbar = navigationController else{
+            return false
+        }
+        let frameenterprise = navbar.navigationBar.convert((navbar.navigationBar.bounds), to: nil)
+        return frame.minY < frameenterprise.maxY
+    }
+    
+    
+    func show(){
+        if super.isViewLoaded {
+            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+            self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
         
-        
+        if let navbar = navigationController{
+            navbar.navigationBar.isHidden = false
+            navbar.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navbar.navigationBar.shadowImage = UIImage()
+            navbar.navigationBar.isTranslucent = true
+        }
+    }
+    
+    func hide(){
+        if let navbar = navigationController{
+            navbar.interactivePopGestureRecognizer?.isEnabled = false
+            navbar.navigationBar.setBackgroundImage(UIImage(named: "green"), for: .default)
+        }
     }
 
     /*

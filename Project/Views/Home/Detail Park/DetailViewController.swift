@@ -28,7 +28,6 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         topImage.image = UIImage(named: deatilPark.img)
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
@@ -37,11 +36,10 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     @objc func showMeDetailView(){
         guard UserDefaults.isUserRegistered else{
             print("Necesita registrarse")
-            TabbarViewController.shared.showModalNeedLoginView()
+//            TabbarViewController.shared.showModalNeedLoginView()
+            self.changeViewsProtocol(identifier: .detailPark)
             return
         }
-        
-        
     }
     
     func changeViewsProtocol(identifier: segueViews) {

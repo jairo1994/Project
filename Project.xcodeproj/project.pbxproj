@@ -29,7 +29,6 @@
 		2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */; };
 		2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */; };
 		2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E12410106200499AEB /* LikesViewController.swift */; };
-		2D1155012410106200499AEB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E72410106200499AEB /* SearchViewController.swift */; };
 		2D1155022410106200499AEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E92410106200499AEB /* ProfileViewController.swift */; };
 		2D1155032410106200499AEB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EB2410106200499AEB /* CategoryModel.swift */; };
 		2D1155042410106200499AEB /* ParkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EC2410106200499AEB /* ParkModel.swift */; };
@@ -84,7 +83,6 @@
 		2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutParkViewController+Constraints.swift"; sourceTree = "<group>"; };
 		2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		2D1154E12410106200499AEB /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
-		2D1154E72410106200499AEB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2D1154E92410106200499AEB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2D1154EB2410106200499AEB /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		2D1154EC2410106200499AEB /* ParkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkModel.swift; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				2DFA87E12410477000200D05 /* Login */,
 				2D1154D22410106200499AEB /* Home */,
 				2D1154E02410106200499AEB /* Likes */,
-				2D1154E62410106200499AEB /* Search */,
 				2D1154E82410106200499AEB /* Profile */,
 				2DFA87E624104AE100200D05 /* TabbarViewController.swift */,
 			);
@@ -266,14 +263,6 @@
 				2D1154E12410106200499AEB /* LikesViewController.swift */,
 			);
 			path = Likes;
-			sourceTree = "<group>";
-		};
-		2D1154E62410106200499AEB /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				2D1154E72410106200499AEB /* SearchViewController.swift */,
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		2D1154E82410106200499AEB /* Profile */ = {
@@ -520,7 +509,6 @@
 				2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */,
 				2DFA87D4241036EF00200D05 /* GenericScrollViewController.swift in Sources */,
 				2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */,
-				2D1155012410106200499AEB /* SearchViewController.swift in Sources */,
 				2D1154FA2410106200499AEB /* DetailViewController.swift in Sources */,
 				2D1154F62410106200499AEB /* HomeViewController.swift in Sources */,
 				2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */,
