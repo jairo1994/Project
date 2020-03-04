@@ -20,6 +20,7 @@ class GenericRoundCollectionView: UICollectionView, UICollectionViewDelegate, UI
     var items = [CollectionCellModel]()
     let sectionInsets = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 0.0)
     let itemsPerRow: CGFloat = 2.4
+    weak var delegated: ChangeViewsProtocol!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -66,6 +67,9 @@ class GenericRoundCollectionView: UICollectionView, UICollectionViewDelegate, UI
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegated.changeViewsProtocol(identifier: .activity)
+    }
     // MARK: UICollectionViewDelegate
     
     /*

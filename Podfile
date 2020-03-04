@@ -11,4 +11,8 @@ target 'Project' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   #pod 'RAMAnimatedTabBarController'
+  pod 'SwiftyUserDefaults', '~> 5.0'
+  #pod 'PopupDialog', '~> 1.1'
+  pod 'Presentr'
+  pod 'IQKeyboardManagerSwift', '~> 6.2.1'
 end

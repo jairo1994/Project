@@ -35,17 +35,27 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     }
     
     @objc func showMeDetailView(){
-        let vc = AboutParkViewController()
-        vc.deatilPark = self.deatilPark
-        self.navigationController?.pushViewController(vc, animated: true)
+        guard UserDefaults.isUserRegistered else{
+            print("Necesita registrarse")
+            TabbarViewController.shared.showModalNeedLoginView()
+            return
+        }
+        
+        
     }
     
     func changeViewsProtocol(identifier: segueViews) {
         switch identifier {
         case .detailPark:
+            let vc = AboutParkViewController()
+            vc.deatilPark = self.deatilPark
+            self.navigationController?.pushViewController(vc, animated: true)
             print("Va al detalle del parque")
             break
         case.activity:
+            let vc = AcitivtyViewController()
+            vc.deatilPark = self.deatilPark
+            self.navigationController?.pushViewController(vc, animated: true)
             print("Va al detalle de la actividad")
             break
         }

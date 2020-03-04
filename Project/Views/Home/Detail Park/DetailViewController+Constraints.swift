@@ -19,21 +19,24 @@ extension DetailViewController{
         self.scrollView.addSubview(labelTheNew)
         labelTheNew.translatesAutoresizingMaskIntoConstraints = false
         labelTheNew.textColor = GeneralService.primaryColor
-        labelTheNew.text = "Resorts nuevos"
+        labelTheNew.text = "Lo más nuevo"
         labelTheNew.font = UIFont.boldSystemFont(ofSize: 23)
         
         collection = (UINib(nibName: "GenericRoundCollectionView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! GenericRoundCollectionView)
         collection.translatesAutoresizingMaskIntoConstraints = false
+        collection.delegated = self
         self.scrollView.addSubview(collection)
         
         self.scrollView.addSubview(labelTheNew2)
         labelTheNew2.translatesAutoresizingMaskIntoConstraints = false
         labelTheNew2.textColor = GeneralService.primaryColor
-        labelTheNew2.text = "Tienes que ver"
+        labelTheNew2.text = "Lo que no te debes perder"
         labelTheNew2.font = UIFont.boldSystemFont(ofSize: 23)
+        //Actividades Extraordinarias
         
         ovalCollection = (UINib(nibName: "SemiOvalGenericCollectionView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! SemiOvalGenericCollectionView)
         ovalCollection.translatesAutoresizingMaskIntoConstraints = false
+        ovalCollection.delegated = self
         self.scrollView.addSubview(ovalCollection)
         
         self.scrollView.addSubview(detailBtn)
@@ -44,8 +47,6 @@ extension DetailViewController{
         detailBtn.addTarget(self, action: #selector(showMeDetailView), for: .touchUpInside)
         
         self.addMyConstraints()
-        self.view.layoutIfNeeded()
-        self.view.setNeedsUpdateConstraints()
     }
     
     func addMyConstraints(){

@@ -15,6 +15,7 @@ class SemiOvalGenericCollectionView: UICollectionView, UICollectionViewDelegate,
     var items = [CollectionCellModel]()
     let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     let itemsPerRow: CGFloat = 2.4
+    weak var delegated: ChangeViewsProtocol!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -60,6 +61,9 @@ class SemiOvalGenericCollectionView: UICollectionView, UICollectionViewDelegate,
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegated.changeViewsProtocol(identifier: .activity)
+    }
     // MARK: UICollectionViewDelegate
     
     /*

@@ -44,6 +44,18 @@
 		2DFA87DC2410393F00200D05 /* SemiOvalGenericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87D82410393E00200D05 /* SemiOvalGenericCollectionView.swift */; };
 		2DFA87DD2410393F00200D05 /* SemiOvalGenericCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87D92410393E00200D05 /* SemiOvalGenericCollectionView.xib */; };
 		2DFA87DE2410393F00200D05 /* SemiOvalGenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87DA2410393E00200D05 /* SemiOvalGenericCollectionViewCell.swift */; };
+		2DFA87E02410451F00200D05 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87DF2410451F00200D05 /* UserDefaultsService.swift */; };
+		2DFA87E42410478900200D05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87E22410478900200D05 /* LoginViewController.swift */; };
+		2DFA87E52410478900200D05 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87E32410478900200D05 /* LoginViewController.xib */; };
+		2DFA87E724104AE100200D05 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87E624104AE100200D05 /* TabbarViewController.swift */; };
+		2DFA87EA24104FEC00200D05 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87E824104FEC00200D05 /* RegisterViewController.swift */; };
+		2DFA87EB24104FEC00200D05 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87E924104FEC00200D05 /* RegisterViewController.xib */; };
+		2DFA87EE2410500300200D05 /* RememberPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87EC2410500300200D05 /* RememberPasswordViewController.swift */; };
+		2DFA87EF2410500300200D05 /* RememberPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87ED2410500300200D05 /* RememberPasswordViewController.xib */; };
+		2DFA87F12410502F00200D05 /* MainLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F02410502F00200D05 /* MainLoginViewController.swift */; };
+		2DFA87F32410511900200D05 /* UserStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F22410511900200D05 /* UserStateService.swift */; };
+		2DFA87F6241057FE00200D05 /* AcitivtyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F5241057FE00200D05 /* AcitivtyViewController.swift */; };
+		2DFA87F82410580E00200D05 /* AcitivtyViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */; };
 		388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +99,18 @@
 		2DFA87D82410393E00200D05 /* SemiOvalGenericCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiOvalGenericCollectionView.swift; sourceTree = "<group>"; };
 		2DFA87D92410393E00200D05 /* SemiOvalGenericCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SemiOvalGenericCollectionView.xib; sourceTree = "<group>"; };
 		2DFA87DA2410393E00200D05 /* SemiOvalGenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiOvalGenericCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DFA87DF2410451F00200D05 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		2DFA87E22410478900200D05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2DFA87E32410478900200D05 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		2DFA87E624104AE100200D05 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		2DFA87E824104FEC00200D05 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2DFA87E924104FEC00200D05 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		2DFA87EC2410500300200D05 /* RememberPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberPasswordViewController.swift; sourceTree = "<group>"; };
+		2DFA87ED2410500300200D05 /* RememberPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RememberPasswordViewController.xib; sourceTree = "<group>"; };
+		2DFA87F02410502F00200D05 /* MainLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginViewController.swift; sourceTree = "<group>"; };
+		2DFA87F22410511900200D05 /* UserStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateService.swift; sourceTree = "<group>"; };
+		2DFA87F5241057FE00200D05 /* AcitivtyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcitivtyViewController.swift; sourceTree = "<group>"; };
+		2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AcitivtyViewController+Constraints.swift"; sourceTree = "<group>"; };
 		82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 		9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				2D1154C62410106200499AEB /* GeneralService.swift */,
+				2DFA87DF2410451F00200D05 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -175,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				2DFA87D52410389700200D05 /* RoundCollection */,
-				2DFA87D6241038EB00200D05 /* SemiOval Collection */,
+				2DFA87D6241038EB00200D05 /* SemiOvalCollection */,
 				2DFA87D3241036EE00200D05 /* GenericScrollViewController.swift */,
 				2D1154CE2410106200499AEB /* HiddenBarViewController.swift */,
 				2DFA87C524101CB800200D05 /* Button.swift */,
@@ -194,10 +219,12 @@
 		2D1154D12410106200499AEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2DFA87E12410477000200D05 /* Login */,
 				2D1154D22410106200499AEB /* Home */,
 				2D1154E02410106200499AEB /* Likes */,
 				2D1154E62410106200499AEB /* Search */,
 				2D1154E82410106200499AEB /* Profile */,
+				2DFA87E624104AE100200D05 /* TabbarViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +297,8 @@
 		2DFA87C424101BBD00200D05 /* Detail Activity */ = {
 			isa = PBXGroup;
 			children = (
+				2DFA87F5241057FE00200D05 /* AcitivtyViewController.swift */,
+				2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */,
 			);
 			path = "Detail Activity";
 			sourceTree = "<group>";
@@ -285,7 +314,7 @@
 			path = RoundCollection;
 			sourceTree = "<group>";
 		};
-		2DFA87D6241038EB00200D05 /* SemiOval Collection */ = {
+		2DFA87D6241038EB00200D05 /* SemiOvalCollection */ = {
 			isa = PBXGroup;
 			children = (
 				2DFA87D82410393E00200D05 /* SemiOvalGenericCollectionView.swift */,
@@ -293,7 +322,22 @@
 				2DFA87DA2410393E00200D05 /* SemiOvalGenericCollectionViewCell.swift */,
 				2DFA87D72410393E00200D05 /* SemiOvalGenericCollectionViewCell.xib */,
 			);
-			path = "SemiOval Collection";
+			path = SemiOvalCollection;
+			sourceTree = "<group>";
+		};
+		2DFA87E12410477000200D05 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA87E22410478900200D05 /* LoginViewController.swift */,
+				2DFA87E32410478900200D05 /* LoginViewController.xib */,
+				2DFA87E824104FEC00200D05 /* RegisterViewController.swift */,
+				2DFA87E924104FEC00200D05 /* RegisterViewController.xib */,
+				2DFA87EC2410500300200D05 /* RememberPasswordViewController.swift */,
+				2DFA87ED2410500300200D05 /* RememberPasswordViewController.xib */,
+				2DFA87F02410502F00200D05 /* MainLoginViewController.swift */,
+				2DFA87F22410511900200D05 /* UserStateService.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		6339CEA4D702B274F2FA34DF /* Frameworks */ = {
@@ -366,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1154F82410106200499AEB /* ParckCollectionViewCell.xib in Resources */,
+				2DFA87EB24104FEC00200D05 /* RegisterViewController.xib in Resources */,
 				2DFA87DB2410393F00200D05 /* SemiOvalGenericCollectionViewCell.xib in Resources */,
 				2DFA87DD2410393F00200D05 /* SemiOvalGenericCollectionView.xib in Resources */,
 				2D1154BE24100FC600499AEB /* LaunchScreen.storyboard in Resources */,
@@ -373,6 +418,8 @@
 				2DFA87CE241032A300200D05 /* GenericRoundCollectionView.xib in Resources */,
 				2DFA87D12410357B00200D05 /* GenericCollectionViewCell.xib in Resources */,
 				2D1154B624100FC500499AEB /* Main.storyboard in Resources */,
+				2DFA87EF2410500300200D05 /* RememberPasswordViewController.xib in Resources */,
+				2DFA87E52410478900200D05 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFA87E724104AE100200D05 /* TabbarViewController.swift in Sources */,
 				2D1154FB2410106200499AEB /* AboutParkViewController.swift in Sources */,
 				2D1155042410106200499AEB /* ParkModel.swift in Sources */,
 				2DFA87D22410357B00200D05 /* GenericCollectionViewCell.swift in Sources */,
@@ -450,18 +498,25 @@
 				2D1154F12410106200499AEB /* UIColor+hexadecimal.swift in Sources */,
 				2D1154F72410106200499AEB /* ParckCollectionViewCell.swift in Sources */,
 				2D1154B324100FC500499AEB /* ViewController.swift in Sources */,
+				2DFA87F6241057FE00200D05 /* AcitivtyViewController.swift in Sources */,
 				2D1154AF24100FC500499AEB /* AppDelegate.swift in Sources */,
 				2D1155032410106200499AEB /* CategoryModel.swift in Sources */,
 				2D1155022410106200499AEB /* ProfileViewController.swift in Sources */,
+				2DFA87EA24104FEC00200D05 /* RegisterViewController.swift in Sources */,
 				2D1154B124100FC500499AEB /* SceneDelegate.swift in Sources */,
+				2DFA87F32410511900200D05 /* UserStateService.swift in Sources */,
+				2DFA87E02410451F00200D05 /* UserDefaultsService.swift in Sources */,
+				2DFA87E42410478900200D05 /* LoginViewController.swift in Sources */,
 				2D1155052410106200499AEB /* ActivityModel.swift in Sources */,
 				2DFA87CD241032A300200D05 /* GenericRoundCollectionView.swift in Sources */,
+				2DFA87EE2410500300200D05 /* RememberPasswordViewController.swift in Sources */,
 				2D1154F52410106200499AEB /* Config.swift in Sources */,
 				2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */,
 				2D1154EE2410106200499AEB /* GeneralService.swift in Sources */,
 				2D1154F02410106200499AEB /* ArcView.swift in Sources */,
 				2DFA87C624101CB800200D05 /* Button.swift in Sources */,
 				2D1154B924100FC500499AEB /* Project.xcdatamodeld in Sources */,
+				2DFA87F12410502F00200D05 /* MainLoginViewController.swift in Sources */,
 				2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */,
 				2DFA87D4241036EF00200D05 /* GenericScrollViewController.swift in Sources */,
 				2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */,
@@ -470,6 +525,7 @@
 				2D1154F62410106200499AEB /* HomeViewController.swift in Sources */,
 				2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */,
 				2DFA87DC2410393F00200D05 /* SemiOvalGenericCollectionView.swift in Sources */,
+				2DFA87F82410580E00200D05 /* AcitivtyViewController+Constraints.swift in Sources */,
 				2D1154F42410106200499AEB /* HiddenBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

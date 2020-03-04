@@ -23,22 +23,6 @@
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="90.401785714285708"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="zol-uN-Feo">
-            <objects>
-                <viewController id="Bb0-KZ-fyY" customClass="SearchViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ee4-8y-AOt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="cGt-E9-79k"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="magnifyingglass.circle" catalog="system" selectedImage="magnifyingglass.circle.fill" id="BdW-pq-x8J" customClass="RAMAnimatedTabBarItem"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0k-qI-f1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2084" y="1340"/>
-        </scene>
         <!--Item 2-->
         <scene sceneID="xZ9-Pc-fVG">
             <objects>
@@ -100,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="-86.956521739130437" y="-4.0178571428571423"/>
         </scene>
-        <!--Animated Tab Bar Controller-->
+        <!--Tabbar View Controller-->
         <scene sceneID="fad-Kp-4m2">
             <objects>
-                <tabBarController id="QLI-vo-zVa" customClass="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                <tabBarController id="QLI-vo-zVa" customClass="TabbarViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gKs-lD-oeE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,7 +96,6 @@
                     <connections>
                         <segue destination="IPY-Vj-Bgz" kind="relationship" relationship="viewControllers" id="e3A-Db-WVG"/>
                         <segue destination="7KH-gr-EZf" kind="relationship" relationship="viewControllers" id="eCa-yi-Ix4"/>
-                        <segue destination="Bb0-KZ-fyY" kind="relationship" relationship="viewControllers" id="PWn-Sp-0Gi"/>
                         <segue destination="FFw-Nx-qBC" kind="relationship" relationship="viewControllers" id="Fje-sB-s3b"/>
                     </connections>
                 </tabBarController>
@@ -148,7 +131,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YZJ-hs-nar"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="tray" catalog="system" selectedImage="tray.fill" id="x7m-B6-yDU" customClass="RAMAnimatedTabBarItem"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="user" selectedImage="tray.fill" catalog="system" id="x7m-B6-yDU" customClass="RAMAnimatedTabBarItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGL-kw-Cuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,10 +162,8 @@
         <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="magnifyingglass.circle" catalog="system" width="64" height="60"/>
-        <image name="magnifyingglass.circle.fill" catalog="system" width="64" height="60"/>
         <image name="park-1" width="1920" height="730"/>
-        <image name="tray" catalog="system" width="64" height="44"/>
         <image name="tray.fill" catalog="system" width="64" height="44"/>
+        <image name="user" width="25" height="25"/>
     </resources>
 </document>
