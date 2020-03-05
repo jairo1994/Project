@@ -62,19 +62,23 @@ class MainLoginViewController: UIViewController {
         remove(asChildViewController: rememberVC)
         remove(asChildViewController: profileVC)
         
-        switch UserDefaults.isUserRegistered {
-        case .login:
-            add(asChildViewController: loginVC)
-            break
-        case .remember:
-            add(asChildViewController: rememberVC)
-            break
-        case .register:
-            add(asChildViewController: registerVC)
-            break
-        case .registered, .guest:
-            add(asChildViewController: profileVC)
-            break
+        if UserDefaults.isUserRegistered == .registered && isWorkingAsModal{
+            self.dismiss(animated: true, completion: nil)
+        }else{
+            switch UserDefaults.isUserRegistered {
+            case .login:
+                add(asChildViewController: loginVC)
+                break
+            case .remember:
+                add(asChildViewController: rememberVC)
+                break
+            case .register:
+                add(asChildViewController: registerVC)
+                break
+            case .registered, .guest:
+                add(asChildViewController: profileVC)
+                break
+            }
         }
     }
     /*

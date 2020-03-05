@@ -21,13 +21,14 @@ class TabbarViewController: UITabBarController {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
         
-        UserDefaults.setUserInfo(UserModel())
-        UserDefaults.setIsUserRegistered(.login)
+//        UserDefaults.setUserInfo(UserModel())
+//        UserDefaults.setIsUserRegistered(.login)
         // Do any additional setup after loading the view.
     }
     
     func showModalNeedLoginView(){
         let guestLoginViewController = MainLoginViewController()
+        guestLoginViewController.isWorkingAsModal = true
         let height: Float = Float(self.view.frame.height)
         let widthsize: Float = Float(self.view.frame.width)
         

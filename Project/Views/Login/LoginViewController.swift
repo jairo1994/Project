@@ -45,11 +45,12 @@ class LoginViewController: UIViewController {
         Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a) \(self.user.name!) \(self.user.lastname!)", type: .success)
         UserDefaults.setUserInfo(user)
         UserDefaults.setIsUserRegistered(state)
-        self.dismiss(animated: true, completion: nil)
+        self.postChange()
     }
     
     @IBAction func guest(_ sender: Any) {
         self.finishedProcess(user: UserModel(), state: .guest)
+        self.postChange()
     }
     
     @IBAction func register(_ sender: Any) {
