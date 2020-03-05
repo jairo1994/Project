@@ -8,11 +8,23 @@
 
 import Foundation
 
-struct Activity {
-    var slogan: String
+struct ActivityModel: Codable {
+    var name: String
+    var img: String
     var desc: String
-    var address: String
-    var imgs: [String]
-    var recomendations: String
-    var include: String
+    var horario: String
+    
+    init(){
+        name = ""
+        img = ""
+        desc = ""
+        horario = ""
+    }
+    
+    init(name: String, img: String, desc: String, horario: String) {
+        self.name = name
+        self.img = img
+        self.desc = desc
+        self.horario = horario
+    }
 }

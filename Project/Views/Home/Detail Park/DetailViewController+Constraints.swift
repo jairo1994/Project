@@ -41,9 +41,6 @@ extension DetailViewController{
         
         self.scrollView.addSubview(detailBtn)
         detailBtn.translatesAutoresizingMaskIntoConstraints = false
-        detailBtn.backgroundColor = GeneralService.primaryColor
-        detailBtn.tintColor = .white
-        detailBtn.setTitle("Showme the resort", for: .normal)
         detailBtn.addTarget(self, action: #selector(showMeDetailView), for: .touchUpInside)
         
         self.addMyConstraints()
@@ -59,20 +56,21 @@ extension DetailViewController{
         labelTheNew.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
         collection.topAnchor.constraint(equalTo: labelTheNew.bottomAnchor).isActive = true
-        collection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
+        collection.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         collection.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         collection.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.2).isActive = true
         
         detailBtn.topAnchor.constraint(equalTo: collection.bottomAnchor, constant: 8).isActive = true
         detailBtn.centerXAnchor.constraint(equalTo: topImage.centerXAnchor).isActive = true
-        detailBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        detailBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        detailBtn.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.95).isActive = true
         
-        labelTheNew2.topAnchor.constraint(equalTo: detailBtn.bottomAnchor).isActive = true
+        labelTheNew2.topAnchor.constraint(equalTo: detailBtn.bottomAnchor, constant: 16).isActive = true
         labelTheNew2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
         labelTheNew2.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
         ovalCollection.topAnchor.constraint(equalTo: labelTheNew2.bottomAnchor, constant: 16).isActive = true
-        ovalCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8).isActive = true
+        ovalCollection.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         ovalCollection.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         ovalCollection.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.3).isActive = true
         

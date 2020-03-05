@@ -18,4 +18,16 @@ class Button {
         btn.layer.cornerRadius = 16
         return btn
     }
+    
+    static func borderButton() -> UIButton{
+        let btn = UIButton(type: .system)
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.backgroundColor = .white
+        btn.layer.borderWidth = 2
+        btn.layer.borderColor = GeneralService.primaryColor.cgColor
+        btn.tintColor = GeneralService.primaryColor
+        btn.contentEdgeInsets = UIEdgeInsets(top: 10, left: 14, bottom: 10, right: 14)
+        btn.layer.cornerRadius = 16
+        return btn
+    }
 }

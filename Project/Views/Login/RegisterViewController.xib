@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,8 +17,68 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicio de sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJL-D0-J2U">
+                    <rect key="frame" x="124" y="164" width="166" height="27.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-qm-9rX">
+                    <rect key="frame" x="24" y="215.5" width="366" height="328"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjD-No-dHO">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xN-dp-fQD">
+                            <rect key="frame" x="0.0" y="42" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="País / Región" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xod-t6-l8j">
+                            <rect key="frame" x="0.0" y="84" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Provincia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFQ-n7-wet">
+                            <rect key="frame" x="0.0" y="126" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono móvil" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bab-BH-93R">
+                            <rect key="frame" x="0.0" y="168" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjc-ow-uAQ">
+                            <rect key="frame" x="0.0" y="210" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8QS-cu-GDW">
+                            <rect key="frame" x="0.0" y="252" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repetir contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCT-0x-sS1">
+                            <rect key="frame" x="0.0" y="294" width="366" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5j-Gq-smD">
+                    <rect key="frame" x="175" y="575.5" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="w5j-Gq-smD" secondAttribute="height" id="nIY-Oz-7sB"/>
+                        <constraint firstAttribute="height" constant="64" id="oAW-KR-djC"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="enter"/>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-pC-fKL">
-                    <rect key="frame" x="150" y="438" width="114" height="30"/>
+                    <rect key="frame" x="150" y="816" width="114" height="30"/>
                     <state key="normal" title="Regresar al login"/>
                     <connections>
                         <action selector="goBack:" destination="-1" eventType="touchUpInside" id="XTg-Z0-4L8"/>
@@ -27,11 +87,23 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="cZz-pC-fKL" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="f47-QI-vgo"/>
-                <constraint firstItem="cZz-pC-fKL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="p5L-I9-EfI"/>
+                <constraint firstItem="RA8-qm-9rX" firstAttribute="centerX" secondItem="zJL-D0-J2U" secondAttribute="centerX" id="DSY-3s-HTV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RA8-qm-9rX" secondAttribute="trailing" constant="24" id="GO4-cP-XOL"/>
+                <constraint firstItem="RA8-qm-9rX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="QUE-p5-2aQ"/>
+                <constraint firstItem="w5j-Gq-smD" firstAttribute="centerX" secondItem="RA8-qm-9rX" secondAttribute="centerX" id="Vr4-RZ-G2y"/>
+                <constraint firstItem="cZz-pC-fKL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cQz-yh-FSQ"/>
+                <constraint firstItem="zJL-D0-J2U" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="flw-gL-6E3"/>
+                <constraint firstItem="w5j-Gq-smD" firstAttribute="top" secondItem="RA8-qm-9rX" secondAttribute="bottom" constant="32" id="oB9-7V-30A"/>
+                <constraint firstItem="RA8-qm-9rX" firstAttribute="top" secondItem="zJL-D0-J2U" secondAttribute="bottom" constant="24" id="olI-gk-t7B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cZz-pC-fKL" secondAttribute="bottom" constant="16" id="qsZ-hX-1JI"/>
+                <constraint firstItem="zJL-D0-J2U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="uVw-WX-QKb"/>
+                <constraint firstItem="w5j-Gq-smD" firstAttribute="width" secondItem="w5j-Gq-smD" secondAttribute="height" id="veQ-y0-ITI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="110" y="102"/>
+            <point key="canvasLocation" x="108.69565217391305" y="101.78571428571428"/>
         </view>
     </objects>
+    <resources>
+        <image name="enter" width="128" height="128"/>
+    </resources>
 </document>

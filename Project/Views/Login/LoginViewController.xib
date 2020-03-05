@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,73 +18,70 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-fe-MDK">
-                    <rect key="frame" x="157.5" y="164" width="99.5" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicio de sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-fe-MDK">
+                    <rect key="frame" x="124" y="164" width="166" height="27.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="p5A-bV-dj1">
-                    <rect key="frame" x="32" y="234.5" width="350" height="76"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="p5A-bV-dj1">
+                    <rect key="frame" x="32" y="241.5" width="350" height="92"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQG-21-3FA">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQG-21-3FA">
                             <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-aA-AjL">
-                            <rect key="frame" x="0.0" y="42" width="350" height="34"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-aA-AjL">
+                            <rect key="frame" x="0.0" y="58" width="350" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-Sd-IdJ">
-                    <rect key="frame" x="175" y="342.5" width="64" height="64"/>
+                    <rect key="frame" x="175" y="365.5" width="64" height="64"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="nNd-Sd-IdJ" secondAttribute="height" id="0rM-Id-M2P"/>
                         <constraint firstAttribute="height" constant="64" id="GFB-Dv-LYh"/>
                     </constraints>
+                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" image="enter"/>
                     <connections>
                         <action selector="login:" destination="-1" eventType="touchUpInside" id="anS-gt-zVK"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-dv-27F">
-                    <rect key="frame" x="115.5" y="433" width="183" height="30"/>
+                    <rect key="frame" x="115.5" y="456" width="183" height="30"/>
                     <state key="normal" title="¿Olvidaste ttu contraseña?"/>
                     <connections>
                         <action selector="rememberPassword:" destination="-1" eventType="touchUpInside" id="ksE-z1-l3x"/>
                     </connections>
                 </button>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sif-IW-ce6">
-                    <rect key="frame" x="139" y="507.5" width="136" height="64"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sif-IW-ce6">
+                    <rect key="frame" x="145" y="546.5" width="124" height="54"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j91-xr-7ls">
-                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j91-xr-7ls">
+                            <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="j91-xr-7ls" secondAttribute="height" id="9Zg-fV-9aK"/>
-                                <constraint firstAttribute="height" constant="64" id="cQe-yL-kgs"/>
+                                <constraint firstAttribute="width" constant="54" id="Z2l-ps-oS7"/>
                             </constraints>
-                            <state key="normal" image="enter"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                            <state key="normal" image="fb"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEe-8Z-vUn">
-                            <rect key="frame" x="72" y="0.0" width="64" height="64"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEe-8Z-vUn">
+                            <rect key="frame" x="70" y="0.0" width="54" height="54"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="iEe-8Z-vUn" secondAttribute="height" id="G8B-Cl-7f7"/>
-                                <constraint firstAttribute="height" constant="64" id="uEu-Ps-CBw"/>
+                                <constraint firstAttribute="height" constant="54" id="uEu-Ps-CBw"/>
                             </constraints>
-                            <state key="normal" image="enter"/>
+                            <state key="normal" image="go"/>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="j91-xr-7ls" firstAttribute="width" secondItem="j91-xr-7ls" secondAttribute="height" id="PWB-Lq-tQc"/>
-                        <constraint firstItem="iEe-8Z-vUn" firstAttribute="width" secondItem="iEe-8Z-vUn" secondAttribute="height" id="bAL-ec-scW"/>
-                        <constraint firstItem="iEe-8Z-vUn" firstAttribute="width" secondItem="iEe-8Z-vUn" secondAttribute="height" id="joY-Rr-znj"/>
-                    </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar con" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxy-o2-V3p">
-                    <rect key="frame" x="168" y="487" width="78.5" height="20.5"/>
+                    <rect key="frame" x="168" y="510" width="78.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -122,7 +119,7 @@
                 <constraint firstItem="Sif-IW-ce6" firstAttribute="centerX" secondItem="jxy-o2-V3p" secondAttribute="centerX" id="RLK-uy-e6W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WYf-Kj-QP1" secondAttribute="bottom" id="TMk-i0-067"/>
                 <constraint firstItem="jxy-o2-V3p" firstAttribute="centerX" secondItem="Zo2-dv-27F" secondAttribute="centerX" id="Vzy-3b-Nbt"/>
-                <constraint firstItem="Sif-IW-ce6" firstAttribute="top" secondItem="jxy-o2-V3p" secondAttribute="bottom" id="aZG-wb-rck"/>
+                <constraint firstItem="Sif-IW-ce6" firstAttribute="top" secondItem="jxy-o2-V3p" secondAttribute="bottom" constant="16" id="aZG-wb-rck"/>
                 <constraint firstItem="jxy-o2-V3p" firstAttribute="top" secondItem="Zo2-dv-27F" secondAttribute="bottom" constant="24" id="gnR-HP-Plf"/>
                 <constraint firstItem="Zo2-dv-27F" firstAttribute="top" secondItem="nNd-Sd-IdJ" secondAttribute="bottom" constant="26.5" id="m1G-Y1-2aj"/>
                 <constraint firstItem="Z6j-fe-MDK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="pmN-IY-Iru"/>
@@ -136,5 +133,7 @@
     </objects>
     <resources>
         <image name="enter" width="128" height="128"/>
+        <image name="fb" width="128" height="128"/>
+        <image name="go" width="192" height="192"/>
     </resources>
 </document>

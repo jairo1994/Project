@@ -10,11 +10,11 @@ import UIKit
 
 class AcitivtyViewController: GenericScrollViewController {
     
-    var deatilPark = ParkModel()
+    var deatilActivity = ActivityModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topImage.image = UIImage(named: deatilPark.img)
+        topImage.image = UIImage(named: deatilActivity.img)
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
     }

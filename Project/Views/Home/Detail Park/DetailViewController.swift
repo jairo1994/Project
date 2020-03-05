@@ -19,7 +19,7 @@ protocol ChangeViewsProtocol: class {
 
 class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     var deatilPark = ParkModel()
-    let detailBtn = Button.normalButton()
+    let detailBtn = Button.borderButton()
     let buyNow = Button.normalButton()
     let labelTheNew = UILabel()
     let labelTheNew2 = UILabel()
@@ -30,6 +30,12 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
         super.viewDidLoad()
         topImage.image = UIImage(named: deatilPark.img)
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
+        collection.items = deatilPark.category.first!.activities
+        ovalCollection.items = deatilPark.category.first!.activities
+        collection.reloadData()
+        ovalCollection.reloadData()
+        
+        detailBtn.setTitle("Acerca de \(deatilPark.name)", for: .normal)
         // Do any additional setup after loading the view.
     }
     
@@ -52,7 +58,7 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
             break
         case.activity:
             let vc = AcitivtyViewController()
-            vc.deatilPark = self.deatilPark
+//            vc.deatilPark = self.deatilPark
             self.navigationController?.pushViewController(vc, animated: true)
             print("Va al detalle de la actividad")
             break

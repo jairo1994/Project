@@ -9,9 +9,8 @@
 import Foundation
 
 
-struct Category {
-//    var name: String
-//    var img: String
-//    var category: String
-//    var desc: String
+struct CategoryModel: Codable {
+    var name: String
+    var id: Int
+    var activities: [ActivityModel]
 }

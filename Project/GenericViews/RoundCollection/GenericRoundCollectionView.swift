@@ -11,28 +11,18 @@ import UIKit
 
 private let reuseIdentifier = "GenericCollectionViewCell"
 
-struct CollectionCellModel {
-    var img: String
-    var name: String
-}
-
 class GenericRoundCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource {
-    var items = [CollectionCellModel]()
-    let sectionInsets = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 0.0)
+    var items = [ActivityModel]()
+    let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
     let itemsPerRow: CGFloat = 2.4
     weak var delegated: ChangeViewsProtocol!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         self.dataSource = self
         self.delegate = self
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        items = [CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba")]
-        // Register cell classes
         self.register(UINib(nibName: reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-        
+    
         // Do any additional setup after loading the view.
     }
     
@@ -61,7 +51,8 @@ class GenericRoundCollectionView: UICollectionView, UICollectionViewDelegate, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? GenericCollectionViewCell else { return UICollectionViewCell() }
-        
+        cell.image.image = UIImage(named: self.items[indexPath.item].img)
+        cell.label.text = self.items[indexPath.item].name
         // Configure the cell
         
         return cell

@@ -23,12 +23,25 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let bundle = Bundle(for: type(of: self))
+        guard let url = bundle.url(forResource: "parks", withExtension: "json"),
+            let data = try? Data(contentsOf: url) else {
+                return
+        }
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .secondsSince1970
+        guard let launch = try? decoder.decode([ParkModel].self, from: data) else {
+            return
+        }
+        
+        
         /*MARK: En esta vista se realiza la carga de la información antes de ingresar al home*/
         
         /*El servicio general de la app tiene la función de descargar la información antes de proceder a entrar al home*/
-        GeneralService.parks = [ParkModel(name: "The Grand At Moon Palace Resorts", slogan: "En The Grand at Moon Palace tendrás para refrescarte", imgthumb: "", desc: "The Grand at Moon Palace te brinda la posibilidad de disfrutar las vacaciones de sol y playa más increíbles de tu vida. Con sus modernas instalaciones, atenciones personalizadas y un sinfín de actividades, bares y restaurantes gourmet, este hotel Todo Incluido en Cancún ubicado entre la Zona Hotelera y Puerto Morelos, dentro del complejo Moon Palace, lleva la definición de lujo al siguiente nivel.", img: "park-1", schedule: "De lunes a domingo de 10:30 amm a 11:00 pm", latitude: 0.0, longitude: 0.0, address: "", id: 0),
-                                ParkModel(name: "Sunrise Palace Resorts", slogan: "En The Grand at Moon Palace tendrás para refrescarte", imgthumb: "", desc: "The Grand at Moon Palace te brinda la posibilidad de disfrutar las vacaciones de sol y playa más increíbles de tu vida. Con sus modernas instalaciones, atenciones personalizadas y un sinfín de actividades, bares y restaurantes gourmet, este hotel Todo Incluido en Cancún ubicado entre la Zona Hotelera y Puerto Morelos, dentro del complejo Moon Palace, lleva la definición de lujo al siguiente nivel.", img: "park-2", schedule: "De lunes a domingo de 10:30 amm a 11:00 pm", latitude: 0.0, longitude: 0.0, address: "", id: 0),
-                                ParkModel(name: "Cozumel Palace Resorts", slogan: "En The Grand at Moon Palace tendrás para refrescarte", imgthumb: "", desc: "The Grand at Moon Palace te brinda la posibilidad de disfrutar las vacaciones de sol y playa más increíbles de tu vida. Con sus modernas instalaciones, atenciones personalizadas y un sinfín de actividades, bares y restaurantes gourmet, este hotel Todo Incluido en Cancún ubicado entre la Zona Hotelera y Puerto Morelos, dentro del complejo Moon Palace, lleva la definición de lujo al siguiente nivel.", img: "park-3", schedule: "De lunes a domingo de 10:30 amm a 11:00 pm", latitude: 0.0, longitude: 0.0, address: "", id: 0)]
+        
+        GeneralService.parks = launch /*[ParkModel(name: "The Grand At Moon Palace Resorts", slogan: "En The Grand at Moon Palace tendrás para refrescarte", imgthumb: "xcaret-thumb", desc: "The Grand at Moon Palace te brinda la posibilidad de disfrutar las vacaciones de sol y playa más increíbles de tu vida. Con sus modernas instalaciones, atenciones personalizadas y un sinfín de actividades, bares y restaurantes gourmet, este hotel Todo Incluido en Cancún ubicado entre la Zona Hotelera y Puerto Morelos, dentro del complejo Moon Palace, lleva la definición de lujo al siguiente nivel.", img: "xcaret", schedule: "De lunes a domingo de 10:30 amm a 11:00 pm", latitude: 20.5805219, longitude: -87.1201275, address: "Carretera Chetúmal Puerto Juárez Kilómetro 282, Solidaridad, 77710 Playa del Carmen, Q.R.", category: [CategoryModel(name: "Lo más nuevo", id: 1, activities:[ActivityModel(name: "Rio del paraiso", img: "", desc: "", horario: "")])])]*/
         
         
         let nib = UINib(nibName: identifier, bundle: nil)
@@ -83,7 +96,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = parksCollectionView.dequeueReusableCell(withReuseIdentifier: "ParckCollectionViewCell", for: indexPath) as? ParckCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.imagePark.image = UIImage(named: GeneralService.parks[indexPath.item].img)
+        cell.imagePark.image = UIImage(named: GeneralService.parks[indexPath.item].imgthumb)
         cell.namePark.text = GeneralService.parks[indexPath.item].name
         cell.descPark.text = GeneralService.parks[indexPath.item].slogan
         
@@ -94,6 +107,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 extension HomeViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: view.frame.width, height: view.frame.height)
+        return CGSize(width: view.frame.width-10, height: view.frame.height)
     }
 }

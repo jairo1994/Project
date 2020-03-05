@@ -12,7 +12,7 @@ import UIKit
 private let reuseIdentifier = "SemiOvalGenericCollectionViewCell"
 
 class SemiOvalGenericCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource {
-    var items = [CollectionCellModel]()
+    var items = [ActivityModel]()
     let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     let itemsPerRow: CGFloat = 2.4
     weak var delegated: ChangeViewsProtocol!
@@ -21,12 +21,7 @@ class SemiOvalGenericCollectionView: UICollectionView, UICollectionViewDelegate,
         super.awakeFromNib()
         self.dataSource = self
         self.delegate = self
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        items = [CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba"),CollectionCellModel(img: "Prueba", name: "prueba")]
-        // Register cell classes
         self.register(UINib(nibName: reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-        
         // Do any additional setup after loading the view.
     }
     
@@ -56,7 +51,9 @@ class SemiOvalGenericCollectionView: UICollectionView, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? SemiOvalGenericCollectionViewCell else { return UICollectionViewCell() }
         
-        // Configure the cell
+        
+        cell.image.image = UIImage(named: self.items[indexPath.item].img)
+        cell.label.text = self.items[indexPath.item].name
         
         return cell
     }

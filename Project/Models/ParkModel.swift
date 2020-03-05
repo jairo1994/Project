@@ -8,7 +8,7 @@
 
 import Foundation
 /*nombre, imagen, categoría, breve descripción, horario, un acceso al mapa y agregar a mis favoritos*/
-struct ParkModel {
+struct ParkModel: Codable {
     var name: String
     var slogan: String
     var imgthumb: String
@@ -18,7 +18,7 @@ struct ParkModel {
     var latitude: Double
     var longitude: Double
     var address: String
-    var id: Int //Esta variable ayudaria a realizar una petición para el detalle del parque, a no ser que toda la información se descargará al iniciar la app
+    var category: [CategoryModel]
     
     init(){
         name = ""
@@ -30,10 +30,10 @@ struct ParkModel {
         latitude = 0.0
         longitude = 0.0
         address = ""
-        id = 0
+        category = [CategoryModel]()
     }
     
-    init(name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, id: Int){
+    init(name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel]){
         self.name = name
         self.slogan = slogan
         self.imgthumb = imgthumb
@@ -43,7 +43,7 @@ struct ParkModel {
         self.latitude = latitude
         self.longitude = longitude
         self.address = address
-        self.id = id
+        self.category = category
     }
 }
 

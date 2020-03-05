@@ -19,6 +19,12 @@ class SemiOvalGenericCollectionViewCell: UICollectionViewCell {
         self.imageContainer.layer.masksToBounds = false
         imageContainer.layer.cornerRadius = 10
         imageContainer.layer.masksToBounds = true
+
+        label.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        label.layer.shadowRadius = 1.0
+        label.layer.shadowOpacity = 1.0
+        label.layer.shadowOffset = CGSize(width: 1.5, height: 1.5)
+        label.layer.masksToBounds = false
     }
     
 }

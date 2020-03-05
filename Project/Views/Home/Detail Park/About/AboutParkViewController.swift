@@ -44,12 +44,12 @@ class AboutParkViewController: GenericScrollViewController {
         self.informationTextView.attributedText = attrString
         
         
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let camera = GMSCameraPosition.camera(withLatitude: deatilPark.latitude, longitude: deatilPark.longitude, zoom: 15.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+        marker.position = CLLocationCoordinate2D(latitude: deatilPark.latitude, longitude: deatilPark.latitude)
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
