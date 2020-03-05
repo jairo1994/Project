@@ -59,7 +59,7 @@ class GenericRoundCollectionView: UICollectionView, UICollectionViewDelegate, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegated.changeViewsProtocol(identifier: .activity)
+        delegated.showActivityDetail(id: self.items[indexPath.item].id)
     }
     // MARK: UICollectionViewDelegate
     

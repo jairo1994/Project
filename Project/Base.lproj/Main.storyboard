@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QLI-vo-zVa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QLI-vo-zVa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BZL-8F-fCO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="heart" catalog="system" selectedImage="heart.fill" id="5aA-h8-njt" customClass="RAMAnimatedTabBarItem"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="heart" catalog="system" selectedImage="heart.fill" id="5aA-h8-njt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mky-si-sOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +131,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YZJ-hs-nar"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="user-light" selectedImage="user" id="x7m-B6-yDU" customClass="RAMAnimatedTabBarItem"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="user-light" selectedImage="user" id="x7m-B6-yDU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGL-kw-Cuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +141,7 @@
         <scene sceneID="Vhe-vU-Zy8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IPY-Vj-Bgz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" image="house" catalog="system" selectedImage="house.fill" id="eZ3-Gl-TS0" customClass="RAMAnimatedTabBarItem"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="house" catalog="system" selectedImage="house.fill" id="eZ3-Gl-TS0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lxf-yk-wlj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -19,6 +19,14 @@ extension AboutParkViewController{
         mapView.isUserInteractionEnabled = false
         mapView.translatesAutoresizingMaskIntoConstraints = false
         
+        scrollView.addSubview(labelAddress)
+        labelAddress.translatesAutoresizingMaskIntoConstraints = false
+        
+        scrollView.addSubview(included)
+        included.translatesAutoresizingMaskIntoConstraints = false
+        
+        scrollView.addSubview(includedTextView)
+        includedTextView.translatesAutoresizingMaskIntoConstraints = false
         
         self.addMyConstraints()
         self.view.layoutIfNeeded()
@@ -35,13 +43,22 @@ extension AboutParkViewController{
         mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         mapView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.4).isActive = true
         
+        labelAddress.topAnchor.constraint(equalTo: mapView.bottomAnchor).isActive = true
+        labelAddress.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        labelAddress.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        includedTextView.topAnchor.constraint(equalTo: mapView.bottomAnchor, constant: 24).isActive = true
+        includedTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        includedTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        
         let label = UILabel()
         label.numberOfLines = 0
         label.textColor = .white
         label.text = "Womble the first component is the alpha not the last one. So#ff00ff00 has alpha 1 because of the ff at the beginning."
         scrollView.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.topAnchor.constraint(equalTo: mapView.bottomAnchor).isActive = true
+        label.topAnchor.constraint(equalTo: includedTextView.bottomAnchor).isActive = true
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true

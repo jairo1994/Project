@@ -14,7 +14,7 @@ extension DetailViewController{
         
         self.scrollView.addSubview(buyNow)
         buyNow.setTitle("COMPRAR AHORA", for: .normal)
-        buyNow.addTarget(self, action: #selector(showMeDetailView), for: .touchUpInside)
+        buyNow.addTarget(self, action: #selector(buyNowAction), for: .touchUpInside)
         
         self.scrollView.addSubview(labelTheNew)
         labelTheNew.translatesAutoresizingMaskIntoConstraints = false

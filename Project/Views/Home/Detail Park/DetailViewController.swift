@@ -14,11 +14,12 @@ enum segueViews{
 }
 
 protocol ChangeViewsProtocol: class {
-    func changeViewsProtocol(identifier: segueViews)
+    func showAboutPark()
+    func showActivityDetail(id: Int)
 }
 
 class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
-    var deatilPark = ParkModel()
+    var detailPark = ParkModel()
     let detailBtn = Button.borderButton()
     let buyNow = Button.normalButton()
     let labelTheNew = UILabel()
@@ -28,41 +29,42 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topImage.image = UIImage(named: deatilPark.img)
+        topImage.image = UIImage(named: detailPark.img)
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
-        collection.items = deatilPark.category.first!.activities
-        ovalCollection.items = deatilPark.category.first!.activities
+        collection.items = detailPark.category.first!.activities
+        ovalCollection.items = detailPark.category.first!.activities
         collection.reloadData()
         ovalCollection.reloadData()
         
-        detailBtn.setTitle("Acerca de \(deatilPark.name)", for: .normal)
+        detailBtn.setTitle("Acerca de \(detailPark.name)", for: .normal)
         // Do any additional setup after loading the view.
     }
     
-    @objc func showMeDetailView(){
+    @objc func buyNowAction(){
         guard UserDefaults.isUserRegistered else{
             print("Necesita registrarse")
-//            TabbarViewController.shared.showModalNeedLoginView()
-            self.changeViewsProtocol(identifier: .detailPark)
+            TabbarViewController.shared.showModalNeedLoginView()
             return
         }
     }
     
-    func changeViewsProtocol(identifier: segueViews) {
-        switch identifier {
-        case .detailPark:
-            let vc = AboutParkViewController()
-            vc.deatilPark = self.deatilPark
-            self.navigationController?.pushViewController(vc, animated: true)
-            print("Va al detalle del parque")
-            break
-        case.activity:
+    @objc func showMeDetailView(){
+        self.showAboutPark()
+    }
+    
+    func showAboutPark() {
+        let vc = AboutParkViewController()
+        vc.detailPark = self.detailPark
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func showActivityDetail(id: Int){
+        self.detailPark.getSpecificActivityBy(id: id, Callback: { (activity, subtitle) in
             let vc = AcitivtyViewController()
-//            vc.deatilPark = self.deatilPark
+            vc.detailActivity = activity
+            vc.subtitle = subtitle
             self.navigationController?.pushViewController(vc, animated: true)
-            print("Va al detalle de la actividad")
-            break
-        }
+        })
     }
 
     /*

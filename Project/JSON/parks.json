@@ -9,6 +9,15 @@
       "latitude": 20.5805219,
       "longitude": -87.1201275,
       "address": "Carretera Chetúmal Puerto Juárez Kilómetro 282, Solidaridad, 77710 Playa del Carmen, Q.R.",
+      "included": ["Acceso al Área Plus (vestidores, baños y casilleros privados).",
+      "Una comida buffet con una cerveza incluida (café y aguas frescas ilimitadas durante tu consumo).",
+      "Recorridos en tres ríos subterráneos (incluye bolsa de seguridad durante el recorrido).",
+      "La presentación de Xcaret México Espectacular.",
+      "Acceso a la playa, la caleta y pozas naturales.",
+      "Visitas al Acuario de Arrecife Coral, el Mariposario y Aviario.",
+      "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
+      "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
+      "Sendero de la selva tropical."],
       "category": [{
         "name": "Lo más nuevo",
         "id": 1,
@@ -16,19 +25,25 @@
           "name": "Rio del paraiso",
           "img": "rio",
           "desc": "Goza del encanto del Río del Paraíso desde la comodidad de una balsa. Navega por las aguas cristalinas de este río que atraviesa los paisajes del Sendero de la Selva Tropical. En tu recorrido puedes llegar a observar cangrejos azules, iguanas y pecaríes.",
-          "horario": "8:30 AM - 5:30 PM"
+          "horario": "8:30 AM - 5:30 PM",
+          "id": 1,
+          "itHasAdditionalCost": false
         },
         {
           "name": "Rios subterraneos",
           "img": "subterraneo",
           "desc": "Sumérgete en ríos subterráneos de aguas frescas y cristalinas provenientes del interior de la tierra, y recorre un laberinto de cuevas y túneles iluminados por luz natural, proveniente de los respiraderos.\n\nDurante el trayecto vas a observar formaciones de coral fosilizadas en la roca, muestra de los miles de años en los que este lugar fue parte del mar.",
-          "horario": "8:30 AM - 5:30 PM"
+          "horario": "8:30 AM - 5:30 PM",
+          "id": 2,
+          "itHasAdditionalCost": false
         },
         {
           "name": "Mundo de niños",
           "img": "worldchindren",
           "desc": "Mundo de Niños es un área especial para niños en Xcaret donde los menores de 12 años viven grandes aventuras en el Majestuoso Paraíso de México.",
-          "horario": "8:30 AM - 5:30 PM"
+          "horario": "8:30 AM - 5:30 PM",
+          "id": 3,
+          "itHasAdditionalCost": true
         }]
       }]
     },
@@ -42,6 +57,15 @@
       "latitude": 20.5911968,
       "longitude": -87.1275379,
       "address": "Carretera Chetumal, Puerto Juarez Km 282, 77710 Playa del Carmen, Q.R.",
+      "included": ["Acceso al Área Plus (vestidores, baños y casilleros privados).",
+      "Una comida buffet con una cerveza incluida (café y aguas frescas ilimitadas durante tu consumo).",
+      "Recorridos en tres ríos subterráneos (incluye bolsa de seguridad durante el recorrido).",
+      "La presentación de Xcaret México Espectacular.",
+      "Acceso a la playa, la caleta y pozas naturales.",
+      "Visitas al Acuario de Arrecife Coral, el Mariposario y Aviario.",
+      "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
+      "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
+      "Sendero de la selva tropical."],
       "category": [{
         "name": "Actividades aereas",
         "id": 1,
@@ -49,19 +73,25 @@
           "name": "Tirolesas",
           "img": "tirolesa",
           "desc": "Podrás experimentar la sensación de volar en dos circuitos de tirolesas, incluyendo la más alta de la Riviera Maya, conducir en dos rutas a través de la selva en un vehículo anfibio y pasar por cavernas inundadas y puentes colgantes; remar nadar o caminar por un río de estalactitas, mientras observas escenarios subterráneos incomparables y experimentar un divertido hamacuatizaje en un cenote.",
-          "horario": "9:00 AM - 4:45 PM"
+          "horario": "9:00 AM - 4:45 PM",
+          "id": 4,
+          "itHasAdditionalCost": false
         },
         {
           "name": "Hamacuatizaje",
           "img": "hamaca",
           "desc": "Nos tomamos la libertad de combinar una hamaca con una tirolesa que acuatiza en un cenote para que vivas una de las creaciones más divertidas del parque Xplor.\n\nEso es lo que hace especial a este lugar, su versatilidad, ya que puedes disfrutar de cavernas, ríos subterráneos, selva y hasta cenotes, todo en el mismo lugar y con las actividades más emocionantes.",
-          "horario": "9:00 AM - 4:45 PM"
+          "horario": "9:00 AM - 4:45 PM",
+          "id": 5,
+          "itHasAdditionalCost": true
         },
         {
           "name": "Vehículos Anfibios",
           "img": "anfibio",
           "desc": "Nos tomamos la libertad de combinar una hamaca con una tirolesa que acuatiza en un cenote para que vivas una de las creaciones más divertidas del parque Xplor.\n\nEso es lo que hace especial a este lugar, su versatilidad, ya que puedes disfrutar de cavernas, ríos subterráneos, selva y hasta cenotes, todo en el mismo lugar y con las actividades más emocionantes.",
-          "horario": "9:00 AM - 4:45 PM"
+          "horario": "9:00 AM - 4:45 PM",
+          "id": 6,
+          "itHasAdditionalCost": false
         }]
       }]
     },
@@ -75,6 +105,15 @@
       "latitude": 20.3188529,
       "longitude": -87.3604596,
       "address": "Carretera Chetúmal Puerto Juárez Kilómetro 282, Solidaridad, 77710 Playa del Carmen, Q.R.",
+      "included": ["Acceso al Área Plus (vestidores, baños y casilleros privados).",
+      "Una comida buffet con una cerveza incluida (café y aguas frescas ilimitadas durante tu consumo).",
+      "Recorridos en tres ríos subterráneos (incluye bolsa de seguridad durante el recorrido).",
+      "La presentación de Xcaret México Espectacular.",
+      "Acceso a la playa, la caleta y pozas naturales.",
+      "Visitas al Acuario de Arrecife Coral, el Mariposario y Aviario.",
+      "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
+      "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
+      "Sendero de la selva tropical."],
       "category": [{
         "name": "Actividades por descubrir",
         "id": 1,
@@ -82,19 +121,25 @@
           "name": "Vuela tu papalote",
           "img": "papalote",
           "desc": "En Xel-Há, ¡también hay peces en el aire! Como una actividad relajante para toda la familia se ofrece esta inspiradora opción, lo más cercano a que el hombre llegue a manejar a los pájaros o a dirigir un pez. A través de esta divertida actividad volarás con la imaginación y disfrutarás de la fuerza del viento y la brisa en tu rostro. Se lleva a cabo en el área de El Faro con previa reservación en Atención al Visitante.",
-          "horario": "3:30 PM - 4:30 PM"
+          "horario": "3:30 PM - 4:30 PM",
+          "id": 7,
+          "itHasAdditionalCost": false
         },
         {
           "name": "Vivero",
           "img": "vivero",
           "desc": "El Vivero de Xel-Há es hogar de una gran variedad de plantas nativas. Nuestro Vivero se basa en proyectos para la conservación de la vegetación de la reserva natural, así como de especies en peligro de extinción. Todas las plantas del Vivero Xel-Há, tienen un valor histórico que data de la antigua cultura maya, y que son de vital importancia hoy en día, para las comunidades de la Península de Yucatán.",
-          "horario": "3:30 PM - 4:30 PM"
+          "horario": "3:30 PM - 4:30 PM",
+          "id": 8,
+          "itHasAdditionalCost": false
         },
         {
           "name": "Esnórquel",
           "img": "esnorquel",
           "desc": "Practicar snorkel es en definitiva una de las actividades preferidas de los turistas que visitan el Caribe mexicano. En esta Maravilla Natural podrás observar más de 90 especies marinas como peces ángel, cirujanos, rubias, damiselas, loros, pargos, chernas, sargentos, una familia de rayas, peces globo, algunas barracudas y el caracol rosa, una especie protegida que habita en la Caleta de Xel-Há.",
-          "horario": "3:30 PM - 4:30 PM"
+          "horario": "3:30 PM - 4:30 PM",
+          "id": 9,
+          "itHasAdditionalCost": true
         }]
       }]
     }

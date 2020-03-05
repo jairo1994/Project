@@ -19,6 +19,7 @@ struct ParkModel: Codable {
     var longitude: Double
     var address: String
     var category: [CategoryModel]
+    var included: [String]
     
     init(){
         name = ""
@@ -31,9 +32,10 @@ struct ParkModel: Codable {
         longitude = 0.0
         address = ""
         category = [CategoryModel]()
+        included = [String]()
     }
     
-    init(name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel]){
+    init(name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel], included: [String]){
         self.name = name
         self.slogan = slogan
         self.imgthumb = imgthumb
@@ -44,6 +46,19 @@ struct ParkModel: Codable {
         self.longitude = longitude
         self.address = address
         self.category = category
+        self.included = included
+    }
+    
+    func getSpecificActivityBy(id: Int, Callback: @escaping(_ activity: ActivityModel, _ slogan: String)->Void){
+        category.forEach { (category) in
+            category.activities.forEach { (activity) in
+                if activity.id == id{
+                    Callback(activity, category.name)
+                    return
+                }
+            }
+        }
+        
     }
 }
 

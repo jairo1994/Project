@@ -89,7 +89,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DetailViewController()
-        vc.deatilPark = GeneralService.parks[indexPath.item]
+        vc.detailPark = GeneralService.parks[indexPath.item]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
