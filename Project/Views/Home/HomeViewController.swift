@@ -23,6 +23,10 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*MARK: En esta vista se realiza la carga de la información antes de ingresar al home*/
+        /*El servicio general de la app tiene la función de descargar la información antes de proceder a entrar al home*/
+        
         let bundle = Bundle(for: type(of: self))
         guard let url = bundle.url(forResource: "palace", withExtension: "json"),
             let data = try? Data(contentsOf: url) else {
@@ -36,12 +40,7 @@ class HomeViewController: UIViewController{
             return
         }
         
-        
-        /*MARK: En esta vista se realiza la carga de la información antes de ingresar al home*/
-        
-        /*El servicio general de la app tiene la función de descargar la información antes de proceder a entrar al home*/
-        
-        GeneralService.parks = launch /*[ParkModel(name: "The Grand At Moon Palace Resorts", slogan: "En The Grand at Moon Palace tendrás para refrescarte", imgthumb: "xcaret-thumb", desc: "The Grand at Moon Palace te brinda la posibilidad de disfrutar las vacaciones de sol y playa más increíbles de tu vida. Con sus modernas instalaciones, atenciones personalizadas y un sinfín de actividades, bares y restaurantes gourmet, este hotel Todo Incluido en Cancún ubicado entre la Zona Hotelera y Puerto Morelos, dentro del complejo Moon Palace, lleva la definición de lujo al siguiente nivel.", img: "xcaret", schedule: "De lunes a domingo de 10:30 amm a 11:00 pm", latitude: 20.5805219, longitude: -87.1201275, address: "Carretera Chetúmal Puerto Juárez Kilómetro 282, Solidaridad, 77710 Playa del Carmen, Q.R.", category: [CategoryModel(name: "Lo más nuevo", id: 1, activities:[ActivityModel(name: "Rio del paraiso", img: "", desc: "", horario: "")])])]*/
+        GeneralService.parks = launch
         
         
         let nib = UINib(nibName: identifier, bundle: nil)
@@ -88,10 +87,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = DetailViewController()
-        vc.detailPark = GeneralService.parks[indexPath.item]
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
+        let yourVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabbarViewController") as! TabbarViewController
+        yourVC.detailPark = GeneralService.parks[indexPath.item]
+        
+        GeneralService.primaryColor = UIColor(hexString: GeneralService.parks[indexPath.item].primaryColor)
+        self.navigationController?.pushViewController(yourVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

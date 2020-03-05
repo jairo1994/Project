@@ -7,8 +7,9 @@
 //
 
 import Foundation
-/*nombre, imagen, categoría, breve descripción, horario, un acceso al mapa y agregar a mis favoritos*/
+
 struct ParkModel: Codable {
+    var idPark: Int
     var name: String
     var slogan: String
     var imgthumb: String
@@ -20,8 +21,10 @@ struct ParkModel: Codable {
     var address: String
     var category: [CategoryModel]
     var included: [String]
+    var primaryColor: String
     
     init(){
+        idPark = 0
         name = ""
         slogan = ""
         imgthumb = ""
@@ -33,9 +36,11 @@ struct ParkModel: Codable {
         address = ""
         category = [CategoryModel]()
         included = [String]()
+        primaryColor = ""
     }
     
-    init(name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel], included: [String]){
+    init(idPark:Int, name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel], included: [String], primaryColor: String){
+        self.idPark = idPark
         self.name = name
         self.slogan = slogan
         self.imgthumb = imgthumb
@@ -47,6 +52,7 @@ struct ParkModel: Codable {
         self.address = address
         self.category = category
         self.included = included
+        self.primaryColor = primaryColor
     }
     
     func getSpecificActivityBy(id: Int, Callback: @escaping(_ activity: ActivityModel, _ slogan: String)->Void){

@@ -12,6 +12,7 @@ import SwiftyUserDefaults
 extension DefaultsKeys{
     var isUserRegistered: DefaultsKey<Int> { return .init("isUserRegistered", defaultValue: 0) }
     var userInfo: DefaultsKey<UserModel> { return .init("userInfo", defaultValue: UserModel()) }
+    var activitiesThatUSerLike: DefaultsKey<[activitySaved]> { return .init("activitiesThatUSerLike", defaultValue: [activitySaved]()) }
 }
 
 class UserDefaults{
@@ -30,5 +31,19 @@ class UserDefaults{
     static func setUserInfo(_ user: UserModel){
         Defaults.userInfo = user
     }
+    
+    static var activitiesThatUSerLike: [activitySaved]{
+        return Defaults.activitiesThatUSerLike
+    }
+    
+    static func addActivityThatUserLike(_ id: activitySaved){
+        Defaults.activitiesThatUSerLike.append(id)
+    }
+    
+    static func setAllActivitiesThatUserLike(_ ids: [activitySaved]){
+        Defaults.activitiesThatUSerLike = ids
+    }
+    
+    
 }
 

@@ -21,6 +21,7 @@ class AcitivtyViewController: GenericScrollViewController {
     let scheduleInfo = Button.normalButton()
     let btnLike = UIButton(type: .system)
     var userLikeThisActivity = false
+    var indexLiked = 0
     var includedLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = UIFont.systemFont(ofSize: 18)
@@ -46,16 +47,44 @@ class AcitivtyViewController: GenericScrollViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnLike.setImage(UIImage(named: userLikeThisActivity ? "heart" : "heart-outline"), for: .normal)
+        
+        self.updateHeartButton()
         btnLike.tintColor = .red
+        btnLike.addTarget(self, action: #selector(addActivity), for: .touchUpInside)
+        
         includedLabel.textColor = detailActivity.itHasAdditionalCost ? .red : #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         includedLabel.text = detailActivity.itHasAdditionalCost ? "Con costo adicional" : "Incluido en tu entrada"
+        
         scheduleInfo.setTitle(detailActivity.horario, for: .normal)
         scheduleInfo.isUserInteractionEnabled = false
+        
         topImage.image = UIImage(named: detailActivity.img)
         self.setInformationPark()
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
+    }
+    
+    func updateHeartButton(){
+        if let index = GeneralService.arrayIdsOfActivititesLiked.first(where: {$0.idActivity == self.detailActivity.id}){
+            self.indexLiked = index.idActivity
+        }else{
+            self.indexLiked = 0
+        }
+        btnLike.setImage(UIImage(named: self.indexLiked != 0 ? "heart" : "heart-outline"), for: .normal)
+    }
+    
+    @objc func addActivity(){
+        if self.indexLiked != 0{
+            if let indexToRemove = GeneralService.arrayIdsOfActivititesLiked.firstIndex(where: {$0.idActivity == self.detailActivity.id}){
+                GeneralService.arrayIdsOfActivititesLiked.remove(at: indexToRemove)
+                UserDefaults.setAllActivitiesThatUserLike(GeneralService.arrayIdsOfActivititesLiked)
+            }
+        }else{
+            UserDefaults.addActivityThatUserLike(activitySaved(idPark: TabbarViewController._shared.detailPark.idPark, idActivity: self.detailActivity.id))
+            GeneralService.arrayIdsOfActivititesLiked = UserDefaults.activitiesThatUSerLike
+        }
+        
+        self.updateHeartButton()
     }
     
     func setInformationPark(){

@@ -63,9 +63,8 @@ class MainLoginViewController: UIViewController {
         remove(asChildViewController: profileVC)
         
         if (UserDefaults.isUserRegistered == .registered || UserDefaults.isUserRegistered == .guest) && isWorkingAsModal{
-            self.dismiss(animated: true) {
-                NotificationCenter.default.post(name: NSNotification.Name("userCanBook"), object: nil)
-            }
+            self.navigationController?.popViewController(animated: true)
+            NotificationCenter.default.post(name: NSNotification.Name("userCanBook"), object: nil)
         }else{
             switch UserDefaults.isUserRegistered {
             case .login:

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyUserDefaults
 
 struct ActivityModel: Codable {
     var name: String
@@ -33,4 +34,9 @@ struct ActivityModel: Codable {
         self.id = id
         self.itHasAdditionalCost = itHasAdditionalCost
     }
+}
+
+struct activitySaved: Codable, DefaultsSerializable{
+    var idPark: Int
+    var idActivity: Int
 }

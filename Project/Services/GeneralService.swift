@@ -11,8 +11,6 @@ import UIKit
 
 class GeneralService{
     static var parks: [ParkModel]!
-    
-    static var primaryColor: UIColor {
-        return UIColor(hexString: "#00a98e")
-    }
+    static var primaryColor = UIColor(hexString: "#00a98e")
+    static var arrayIdsOfActivititesLiked: [activitySaved]!
 }

@@ -7,49 +7,31 @@
 //
 
 import UIKit
-import Presentr
 import IQKeyboardManagerSwift
 
 class TabbarViewController: UITabBarController {
+    var detailPark = ParkModel()
     static var _shared : TabbarViewController!
     static var shared : TabbarViewController{
         return _shared
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TabbarViewController._shared = self
+        
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
+        GeneralService.arrayIdsOfActivititesLiked = UserDefaults.activitiesThatUSerLike
+//        if UserDefaults.isUserRegistered != .registered || UserDefaults.isUserRegistered != .guest{
+//           UserDefaults.setIsUserRegistered(.login)
+//        }
         
+        tabBar.barTintColor = UIColor.white
+        tabBar.tintColor = GeneralService.primaryColor
 //        UserDefaults.setUserInfo(UserModel())
 //        UserDefaults.setIsUserRegistered(.login)
         // Do any additional setup after loading the view.
-    }
-    
-    func showModalNeedLoginView(){
-        let guestLoginViewController = MainLoginViewController()
-        guestLoginViewController.isWorkingAsModal = true
-        let height: Float = Float(self.view.frame.height)
-        let widthsize: Float = Float(self.view.frame.width)
-        
-        let presenter: Presentr = {
-            let width = ModalSize.customOrientation(sizePortrait: widthsize , sizeLandscape: height)
-            let height = ModalSize.customOrientation(sizePortrait: height, sizeLandscape: widthsize)
-            let center = ModalCenterPosition.center
-            let customType = PresentationType.custom(width: width, height: height, center: center)
-            
-            let customPresenter = Presentr(presentationType: customType)
-            customPresenter.transitionType = .coverVerticalFromTop
-            customPresenter.dismissTransitionType = .coverVerticalFromTop
-            customPresenter.roundCorners = true
-            customPresenter.blurBackground = true
-            customPresenter.blurStyle = UIBlurEffect.Style.dark
-            customPresenter.dismissOnSwipe = false
-            customPresenter.outsideContextTap = .noAction
-            
-            return customPresenter
-        }()
-        customPresentViewController(presenter, viewController: guestLoginViewController, animated: true)
     }
     /*
     // MARK: - Navigation

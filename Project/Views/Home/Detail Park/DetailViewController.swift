@@ -20,8 +20,8 @@ protocol ChangeViewsProtocol: class {
 
 class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     var detailPark = ParkModel()
-    let detailBtn = Button.borderButton()
-    let buyNow = Button.normalButton()
+    var detailBtn = UIButton()
+    var buyNow = UIButton()
     let labelTheNew = UILabel()
     let labelTheNew2 = UILabel()
     var collection: GenericRoundCollectionView!
@@ -29,6 +29,10 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.detailBtn = Button.borderButton()
+        self.buyNow = Button.normalButton()
+        
+        self.detailPark = TabbarViewController.shared.detailPark
         topImage.image = UIImage(named: detailPark.img)
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
         collection.items = detailPark.category.first!.activities
@@ -45,7 +49,10 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     @objc func buyNowAction(){
         guard UserDefaults.isUserRegistered == .registered || UserDefaults.isUserRegistered == .guest else{
             print("Necesita registrarse")
-            TabbarViewController.shared.showModalNeedLoginView()
+            let guestLoginViewController = MainLoginViewController()
+            guestLoginViewController.isWorkingAsModal = true
+            guestLoginViewController.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(guestLoginViewController, animated: true)
             return
         }
         
@@ -53,7 +60,9 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     }
     
     @objc func showBookView(){
-        self.navigationController?.pushViewController(BookViewController(), animated: true)
+        let book = BookViewController()
+        book.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(book, animated: true)
     }
     
     @objc func showMeDetailView(){
@@ -63,6 +72,7 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     func showAboutPark() {
         let vc = AboutParkViewController()
         vc.detailPark = self.detailPark
+        vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -71,6 +81,7 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
             let vc = AcitivtyViewController()
             vc.detailActivity = activity
             vc.subtitle = subtitle
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         })
     }

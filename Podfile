@@ -6,14 +6,9 @@ target 'Project' do
   use_frameworks!
 
   # Pods for Project
-  pod 'FSPagerView'
-  pod 'Kingfisher', '~> 4.8.0'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  #pod 'RAMAnimatedTabBarController'
   pod 'SwiftyUserDefaults', '~> 5.0'
-  #pod 'PopupDialog', '~> 1.1'
-  pod 'Presentr'
   pod 'IQKeyboardManagerSwift', '~> 6.2.1'
   pod 'TextFieldEffects'
   pod 'NotificationBannerSwift', '~> 3.0.0'

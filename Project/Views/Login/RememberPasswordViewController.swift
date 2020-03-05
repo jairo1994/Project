@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import TextFieldEffects
+
 
 class RememberPasswordViewController: UIViewController {
-
+    @IBOutlet weak var textfieldMail: JiroTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        textfieldMail.placeholderColor = GeneralService.primaryColor
         // Do any additional setup after loading the view.
     }
 

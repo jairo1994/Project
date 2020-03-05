@@ -8,11 +8,24 @@
 
 import UIKit
 
-class LikesViewController: UIViewController {
-
+class LikesViewController: GenericScrollViewController {
+    
+    let likedCellidentifier = "ActivityLikedTableViewCell"
+    var tableViewActivitiesLiked = UITableView()
+    var activitiesLiked = [ActivityModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableViewActivitiesLiked.delegate = self
+        tableViewActivitiesLiked.dataSource = self
+        tableViewActivitiesLiked.register(UINib(nibName: likedCellidentifier, bundle: nil), forCellReuseIdentifier: likedCellidentifier)
+        
+        GeneralService.parks.
+        for i in 0..<GeneralService.arrayIdsOfActivititesLiked.count{
+            activitiesLiked =
+        }
+        topImage.image = UIImage(named: TabbarViewController._shared.detailPark.img)
+        self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
     }
     
