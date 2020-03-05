@@ -20,6 +20,9 @@ class TabbarViewController: UITabBarController {
         TabbarViewController._shared = self
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
+        
+        UserDefaults.setUserInfo(UserModel())
+        UserDefaults.setIsUserRegistered(.login)
         // Do any additional setup after loading the view.
     }
     

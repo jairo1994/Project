@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Project" customModuleProvider="target">
             <connections>
+                <outlet property="txtMail" destination="DZD-l0-E0Z" id="Dsz-9b-Ame"/>
+                <outlet property="txtPassword" destination="p64-Kt-htN" id="r52-OC-siT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,28 +21,57 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicio de sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-fe-MDK">
-                    <rect key="frame" x="124" y="164" width="166" height="27.5"/>
+                    <rect key="frame" x="124" y="144" width="166" height="27.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="p5A-bV-dj1">
-                    <rect key="frame" x="32" y="241.5" width="350" height="92"/>
+                    <rect key="frame" x="32" y="221.5" width="350" height="134"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQG-21-3FA">
-                            <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZD-l0-E0Z" customClass="JiroTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="ob3-QX-yx3"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                    <color key="value" red="0.10980392160000001" green="0.57254901960000004" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOG-aA-AjL">
-                            <rect key="frame" x="0.0" y="58" width="350" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p64-Kt-htN" customClass="JiroTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="0.0" y="79" width="350" height="55"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="tO9-QI-JUU"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                    <color key="value" red="0.10980392160000001" green="0.57254901960000004" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-Sd-IdJ">
-                    <rect key="frame" x="175" y="365.5" width="64" height="64"/>
+                    <rect key="frame" x="175" y="387.5" width="64" height="64"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="nNd-Sd-IdJ" secondAttribute="height" id="0rM-Id-M2P"/>
                         <constraint firstAttribute="height" constant="64" id="GFB-Dv-LYh"/>
@@ -52,14 +83,14 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-dv-27F">
-                    <rect key="frame" x="115.5" y="456" width="183" height="30"/>
+                    <rect key="frame" x="115.5" y="478" width="183" height="30"/>
                     <state key="normal" title="¿Olvidaste ttu contraseña?"/>
                     <connections>
                         <action selector="rememberPassword:" destination="-1" eventType="touchUpInside" id="ksE-z1-l3x"/>
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sif-IW-ce6">
-                    <rect key="frame" x="145" y="546.5" width="124" height="54"/>
+                    <rect key="frame" x="145" y="568.5" width="124" height="54"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j91-xr-7ls">
                             <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
@@ -81,13 +112,13 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar con" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxy-o2-V3p">
-                    <rect key="frame" x="168" y="510" width="78.5" height="20.5"/>
+                    <rect key="frame" x="168" y="532" width="78.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WYf-Kj-QP1">
-                    <rect key="frame" x="8" y="828" width="398" height="34"/>
+                    <rect key="frame" x="8" y="812" width="398" height="34"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-Z2-AVo">
                             <rect key="frame" x="0.0" y="0.0" width="195" height="34"/>
@@ -102,7 +133,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <state key="normal" title="Invitado"/>
                             <connections>
-                                <action selector="guest:" destination="-1" eventType="touchUpInside" id="hKY-ND-hri"/>
+                                <action selector="guest:" destination="-1" eventType="touchUpInside" id="B0q-FX-3MT"/>
                             </connections>
                         </button>
                     </subviews>
@@ -117,12 +148,12 @@
                 <constraint firstItem="p5A-bV-dj1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="QRN-KV-2Pe"/>
                 <constraint firstItem="nNd-Sd-IdJ" firstAttribute="top" secondItem="p5A-bV-dj1" secondAttribute="bottom" constant="32" id="R10-He-ZW0"/>
                 <constraint firstItem="Sif-IW-ce6" firstAttribute="centerX" secondItem="jxy-o2-V3p" secondAttribute="centerX" id="RLK-uy-e6W"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WYf-Kj-QP1" secondAttribute="bottom" id="TMk-i0-067"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WYf-Kj-QP1" secondAttribute="bottom" constant="16" id="TMk-i0-067"/>
                 <constraint firstItem="jxy-o2-V3p" firstAttribute="centerX" secondItem="Zo2-dv-27F" secondAttribute="centerX" id="Vzy-3b-Nbt"/>
                 <constraint firstItem="Sif-IW-ce6" firstAttribute="top" secondItem="jxy-o2-V3p" secondAttribute="bottom" constant="16" id="aZG-wb-rck"/>
                 <constraint firstItem="jxy-o2-V3p" firstAttribute="top" secondItem="Zo2-dv-27F" secondAttribute="bottom" constant="24" id="gnR-HP-Plf"/>
                 <constraint firstItem="Zo2-dv-27F" firstAttribute="top" secondItem="nNd-Sd-IdJ" secondAttribute="bottom" constant="26.5" id="m1G-Y1-2aj"/>
-                <constraint firstItem="Z6j-fe-MDK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="pmN-IY-Iru"/>
+                <constraint firstItem="Z6j-fe-MDK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="pmN-IY-Iru"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WYf-Kj-QP1" secondAttribute="trailing" constant="8" id="sKG-st-SMv"/>
                 <constraint firstItem="WYf-Kj-QP1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="tnj-cD-nt6"/>
                 <constraint firstItem="nNd-Sd-IdJ" firstAttribute="centerX" secondItem="p5A-bV-dj1" secondAttribute="centerX" id="uJW-UP-ISc"/>

@@ -29,8 +29,6 @@ extension AboutParkViewController{
         includedTextView.translatesAutoresizingMaskIntoConstraints = false
         
         self.addMyConstraints()
-        self.view.layoutIfNeeded()
-        self.view.setNeedsUpdateConstraints()
     }
     
     func addMyConstraints(){

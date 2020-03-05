@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController {
     }
 
     @IBAction func goBack(_ sender: Any) {
-        UserState.status = .login
+        UserDefaults.setIsUserRegistered(.login)
         NotificationCenter.default.post(name: NSNotification.Name("statusUserHasChanged"), object: nil)
     }
     

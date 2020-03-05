@@ -29,10 +29,16 @@
 		2D1154FD2410106200499AEB /* AboutParkViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */; };
 		2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */; };
 		2D1154FF2410106200499AEB /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E12410106200499AEB /* LikesViewController.swift */; };
-		2D1155022410106200499AEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154E92410106200499AEB /* ProfileViewController.swift */; };
 		2D1155032410106200499AEB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EB2410106200499AEB /* CategoryModel.swift */; };
 		2D1155042410106200499AEB /* ParkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EC2410106200499AEB /* ParkModel.swift */; };
 		2D1155052410106200499AEB /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154ED2410106200499AEB /* ActivityModel.swift */; };
+		2DA09E35241130950043BE13 /* palace.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DA09E34241130950043BE13 /* palace.json */; };
+		2DA09E37241131C30043BE13 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E36241131C30043BE13 /* UserModel.swift */; };
+		2DA09E3A2411445F0043BE13 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E392411445F0043BE13 /* Alerts.swift */; };
+		2DA09E3E24114B240043BE13 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E3C24114B240043BE13 /* BookViewController.swift */; };
+		2DA09E3F24114B240043BE13 /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA09E3D24114B240043BE13 /* BookViewController.xib */; };
+		2DA09E4124114DA50043BE13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E4024114DA50043BE13 /* ProfileViewController.swift */; };
+		2DA09E4324114DD80043BE13 /* ProfileViewController+constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E4224114DD80043BE13 /* ProfileViewController+constraints.swift */; };
 		2DFA87C624101CB800200D05 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87C524101CB800200D05 /* Button.swift */; };
 		2DFA87CD241032A300200D05 /* GenericRoundCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87CB241032A300200D05 /* GenericRoundCollectionView.swift */; };
 		2DFA87CE241032A300200D05 /* GenericRoundCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87CC241032A300200D05 /* GenericRoundCollectionView.xib */; };
@@ -52,7 +58,6 @@
 		2DFA87EE2410500300200D05 /* RememberPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87EC2410500300200D05 /* RememberPasswordViewController.swift */; };
 		2DFA87EF2410500300200D05 /* RememberPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA87ED2410500300200D05 /* RememberPasswordViewController.xib */; };
 		2DFA87F12410502F00200D05 /* MainLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F02410502F00200D05 /* MainLoginViewController.swift */; };
-		2DFA87F32410511900200D05 /* UserStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F22410511900200D05 /* UserStateService.swift */; };
 		2DFA87F6241057FE00200D05 /* AcitivtyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F5241057FE00200D05 /* AcitivtyViewController.swift */; };
 		2DFA87F82410580E00200D05 /* AcitivtyViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */; };
 		388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */; };
@@ -84,10 +89,16 @@
 		2D1154DE2410106200499AEB /* AboutParkViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AboutParkViewController+Constraints.swift"; sourceTree = "<group>"; };
 		2D1154DF2410106200499AEB /* DetailViewController+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		2D1154E12410106200499AEB /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
-		2D1154E92410106200499AEB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2D1154EB2410106200499AEB /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		2D1154EC2410106200499AEB /* ParkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkModel.swift; sourceTree = "<group>"; };
 		2D1154ED2410106200499AEB /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		2DA09E34241130950043BE13 /* palace.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palace.json; sourceTree = "<group>"; };
+		2DA09E36241131C30043BE13 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2DA09E392411445F0043BE13 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		2DA09E3C24114B240043BE13 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		2DA09E3D24114B240043BE13 /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		2DA09E4024114DA50043BE13 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2DA09E4224114DD80043BE13 /* ProfileViewController+constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+constraints.swift"; sourceTree = "<group>"; };
 		2DFA87C524101CB800200D05 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		2DFA87CB241032A300200D05 /* GenericRoundCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRoundCollectionView.swift; sourceTree = "<group>"; };
 		2DFA87CC241032A300200D05 /* GenericRoundCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericRoundCollectionView.xib; sourceTree = "<group>"; };
@@ -107,7 +118,6 @@
 		2DFA87EC2410500300200D05 /* RememberPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberPasswordViewController.swift; sourceTree = "<group>"; };
 		2DFA87ED2410500300200D05 /* RememberPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RememberPasswordViewController.xib; sourceTree = "<group>"; };
 		2DFA87F02410502F00200D05 /* MainLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginViewController.swift; sourceTree = "<group>"; };
-		2DFA87F22410511900200D05 /* UserStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateService.swift; sourceTree = "<group>"; };
 		2DFA87F5241057FE00200D05 /* AcitivtyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcitivtyViewController.swift; sourceTree = "<group>"; };
 		2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AcitivtyViewController+Constraints.swift"; sourceTree = "<group>"; };
 		82F36F1C2AED52F07403897A /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +192,7 @@
 			children = (
 				2D1154C62410106200499AEB /* GeneralService.swift */,
 				2DFA87DF2410451F00200D05 /* UserDefaultsService.swift */,
+				2DA09E392411445F0043BE13 /* Alerts.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 		2D1154D12410106200499AEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2DA09E3B24114B0F0043BE13 /* Book view */,
 				2DFA87E12410477000200D05 /* Login */,
 				2D1154D22410106200499AEB /* Home */,
 				2D1154E02410106200499AEB /* Likes */,
@@ -271,7 +283,8 @@
 		2D1154E82410106200499AEB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2D1154E92410106200499AEB /* ProfileViewController.swift */,
+				2DA09E4024114DA50043BE13 /* ProfileViewController.swift */,
+				2DA09E4224114DD80043BE13 /* ProfileViewController+constraints.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -282,8 +295,18 @@
 				2D1154EB2410106200499AEB /* CategoryModel.swift */,
 				2D1154EC2410106200499AEB /* ParkModel.swift */,
 				2D1154ED2410106200499AEB /* ActivityModel.swift */,
+				2DA09E36241131C30043BE13 /* UserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2DA09E3B24114B0F0043BE13 /* Book view */ = {
+			isa = PBXGroup;
+			children = (
+				2DA09E3C24114B240043BE13 /* BookViewController.swift */,
+				2DA09E3D24114B240043BE13 /* BookViewController.xib */,
+			);
+			path = "Book view";
 			sourceTree = "<group>";
 		};
 		2DFA87C424101BBD00200D05 /* Detail Activity */ = {
@@ -327,7 +350,6 @@
 				2DFA87EC2410500300200D05 /* RememberPasswordViewController.swift */,
 				2DFA87ED2410500300200D05 /* RememberPasswordViewController.xib */,
 				2DFA87F02410502F00200D05 /* MainLoginViewController.swift */,
-				2DFA87F22410511900200D05 /* UserStateService.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -343,6 +365,7 @@
 		AD1CAA102410A75300AE8242 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				2DA09E34241130950043BE13 /* palace.json */,
 				AD1CAA112410A79300AE8242 /* parks.json */,
 			);
 			path = JSON;
@@ -414,9 +437,11 @@
 				2DFA87DB2410393F00200D05 /* SemiOvalGenericCollectionViewCell.xib in Resources */,
 				2DFA87DD2410393F00200D05 /* SemiOvalGenericCollectionView.xib in Resources */,
 				2D1154BE24100FC600499AEB /* LaunchScreen.storyboard in Resources */,
+				2DA09E35241130950043BE13 /* palace.json in Resources */,
 				2D1154BB24100FC600499AEB /* Assets.xcassets in Resources */,
 				2DFA87CE241032A300200D05 /* GenericRoundCollectionView.xib in Resources */,
 				2DFA87D12410357B00200D05 /* GenericCollectionViewCell.xib in Resources */,
+				2DA09E3F24114B240043BE13 /* BookViewController.xib in Resources */,
 				2D1154B624100FC500499AEB /* Main.storyboard in Resources */,
 				2DFA87EF2410500300200D05 /* RememberPasswordViewController.xib in Resources */,
 				2DFA87E52410478900200D05 /* LoginViewController.xib in Resources */,
@@ -502,10 +527,8 @@
 				2DFA87F6241057FE00200D05 /* AcitivtyViewController.swift in Sources */,
 				2D1154AF24100FC500499AEB /* AppDelegate.swift in Sources */,
 				2D1155032410106200499AEB /* CategoryModel.swift in Sources */,
-				2D1155022410106200499AEB /* ProfileViewController.swift in Sources */,
 				2DFA87EA24104FEC00200D05 /* RegisterViewController.swift in Sources */,
 				2D1154B124100FC500499AEB /* SceneDelegate.swift in Sources */,
-				2DFA87F32410511900200D05 /* UserStateService.swift in Sources */,
 				2DFA87E02410451F00200D05 /* UserDefaultsService.swift in Sources */,
 				2DFA87E42410478900200D05 /* LoginViewController.swift in Sources */,
 				2D1155052410106200499AEB /* ActivityModel.swift in Sources */,
@@ -513,6 +536,7 @@
 				2DFA87EE2410500300200D05 /* RememberPasswordViewController.swift in Sources */,
 				2D1154F52410106200499AEB /* Config.swift in Sources */,
 				2D1154F22410106200499AEB /* UITextView+Attributes.swift in Sources */,
+				2DA09E4124114DA50043BE13 /* ProfileViewController.swift in Sources */,
 				2D1154EE2410106200499AEB /* GeneralService.swift in Sources */,
 				2D1154F02410106200499AEB /* ArcView.swift in Sources */,
 				2DFA87C624101CB800200D05 /* Button.swift in Sources */,
@@ -524,7 +548,11 @@
 				2D1154FA2410106200499AEB /* DetailViewController.swift in Sources */,
 				2D1154F62410106200499AEB /* HomeViewController.swift in Sources */,
 				2D1154FE2410106200499AEB /* DetailViewController+Constraints.swift in Sources */,
+				2DA09E3A2411445F0043BE13 /* Alerts.swift in Sources */,
+				2DA09E4324114DD80043BE13 /* ProfileViewController+constraints.swift in Sources */,
+				2DA09E37241131C30043BE13 /* UserModel.swift in Sources */,
 				2DFA87DC2410393F00200D05 /* SemiOvalGenericCollectionView.swift in Sources */,
+				2DA09E3E24114B240043BE13 /* BookViewController.swift in Sources */,
 				2DFA87F82410580E00200D05 /* AcitivtyViewController+Constraints.swift in Sources */,
 				2D1154F42410106200499AEB /* HiddenBarViewController.swift in Sources */,
 			);

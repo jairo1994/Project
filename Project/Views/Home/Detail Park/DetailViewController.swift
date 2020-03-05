@@ -41,11 +41,13 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     }
     
     @objc func buyNowAction(){
-        guard UserDefaults.isUserRegistered else{
+        guard UserDefaults.isUserRegistered == .registered else{
             print("Necesita registrarse")
             TabbarViewController.shared.showModalNeedLoginView()
             return
         }
+        
+        self.navigationController?.pushViewController(BookViewController(), animated: true)
     }
     
     @objc func showMeDetailView(){

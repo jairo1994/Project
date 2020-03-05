@@ -24,7 +24,7 @@ class HomeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         let bundle = Bundle(for: type(of: self))
-        guard let url = bundle.url(forResource: "parks", withExtension: "json"),
+        guard let url = bundle.url(forResource: "palace", withExtension: "json"),
             let data = try? Data(contentsOf: url) else {
                 return
         }

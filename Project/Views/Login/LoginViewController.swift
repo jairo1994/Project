@@ -7,32 +7,58 @@
 //
 
 import UIKit
+import TextFieldEffects
 
 class LoginViewController: UIViewController {
+    var user = UserModel(name: "Angelica", lastname: "Can Canche", country: "México", provincia: "QRoo", telmovil: "998 1451632", mail: "acan@xcaret.com", password: "xcaret-2020")
+    @IBOutlet weak var txtMail: KaedeTextField!
+    @IBOutlet weak var txtPassword: KaedeTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        txtMail.placeholderColor = GeneralService.primaryColor
+        txtPassword.placeholderColor = GeneralService.primaryColor
         // Do any additional setup after loading the view.
     }
 
     @IBAction func login(_ sender: Any) {
-        self.dismiss(animated: true) {
-            print("Cerrado")
+        //MARK: En esta función habrá una petición al servicor para autenticarse, en caso de loggearse correctamente se guarda en user defaults y le permite al usuario continuar con la compra del servicio
+        
+        
+        let mail = txtMail.text!
+        let password = txtPassword.text!
+        
+        guard mail.trimmingCharacters(in: .whitespaces).count > 0, password.trimmingCharacters(in: .whitespaces).count > 0 else{
+            Alerts.showAlert(title: "Ups", subtitle: "Por favor, ingrese ambos campos para continuar", type: .warning)
+            return
         }
+        
+        guard mail == "angelica", password == "xcaret2020" else{
+            Alerts.showAlert(title: "Ups", subtitle: "Su usuario o contraseña son incorrectos", type: .danger)
+            return
+        }
+        
+        self.finishedProcess(user: self.user, state: .registered)
     }
     
-    @IBAction func register(_ sender: Any) {
-        UserState.status = .register
-        self.postChange()
+    func finishedProcess(user: UserModel, state: userState){
+        Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a) \(self.user.name!) \(self.user.lastname!)", type: .success)
+        UserDefaults.setUserInfo(user)
+        UserDefaults.setIsUserRegistered(state)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func guest(_ sender: Any) {
-        
+        self.finishedProcess(user: UserModel(), state: .guest)
+    }
+    
+    @IBAction func register(_ sender: Any) {
+        UserDefaults.setIsUserRegistered(.register)
+        self.postChange()
     }
     
     @IBAction func rememberPassword(_ sender: Any) {
-        UserState.status = .remember
+        UserDefaults.setIsUserRegistered(.remember)
         self.postChange()
     }
     

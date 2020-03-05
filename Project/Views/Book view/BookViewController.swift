@@ -1,14 +1,14 @@
 //
-//  RememberPasswordViewController.swift
+//  BookViewController.swift
 //  Project
 //
-//  Created by Jairo on 04/03/20.
+//  Created by Jairo on 05/03/20.
 //  Copyright © 2020 Movil. All rights reserved.
 //
 
 import UIKit
 
-class RememberPasswordViewController: UIViewController {
+class BookViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,11 @@ class RememberPasswordViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func goBack(_ sender: Any) {
-        UserDefaults.setIsUserRegistered(.login)
-        NotificationCenter.default.post(name: NSNotification.Name("statusUserHasChanged"), object: nil)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
+
     /*
     // MARK: - Navigation
 

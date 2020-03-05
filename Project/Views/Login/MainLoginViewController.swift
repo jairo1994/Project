@@ -9,6 +9,8 @@
 import UIKit
 
 class MainLoginViewController: UIViewController {
+    
+    var isWorkingAsModal = false
     private lazy var loginVC: LoginViewController = {
         var viewController = LoginViewController()
         self.add(asChildViewController: viewController)
@@ -23,6 +25,12 @@ class MainLoginViewController: UIViewController {
     
     private lazy var rememberVC: RememberPasswordViewController = {
         var viewController = RememberPasswordViewController()
+        self.add(asChildViewController: viewController)
+        return viewController
+    }()
+    
+    private lazy var profileVC: ProfileViewController = {
+        var viewController = ProfileViewController()
         self.add(asChildViewController: viewController)
         return viewController
     }()
@@ -52,8 +60,9 @@ class MainLoginViewController: UIViewController {
         remove(asChildViewController: loginVC)
         remove(asChildViewController: registerVC)
         remove(asChildViewController: rememberVC)
+        remove(asChildViewController: profileVC)
         
-        switch UserState.status {
+        switch UserDefaults.isUserRegistered {
         case .login:
             add(asChildViewController: loginVC)
             break
@@ -63,10 +72,11 @@ class MainLoginViewController: UIViewController {
         case .register:
             add(asChildViewController: registerVC)
             break
+        case .registered, .guest:
+            add(asChildViewController: profileVC)
+            break
         }
     }
-
-
     /*
     // MARK: - Navigation
 

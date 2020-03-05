@@ -36,8 +36,8 @@ class HiddenBarViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         if let navbar = navigationController{
-            navbar.navigationBar.isHidden = true
-            navbar.navigationBar.setBackgroundImage(nil, for: .default)
+//            navbar.navigationBar.isHidden = true
+            navbar.navigationBar.setBackgroundImage(UIImage(named: "green"), for: .default)
             navbar.navigationBar.shadowImage = nil
         }
     }

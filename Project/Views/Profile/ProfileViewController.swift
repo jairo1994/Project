@@ -1,18 +1,22 @@
 //
 //  ProfileViewController.swift
-//  Xcaret
+//  Project
 //
-//  Created by Jairo on 04/03/20.
+//  Created by Jairo on 05/03/20.
 //  Copyright © 2020 Movil. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-
+class ProfileViewController: GenericScrollViewController {
+    var avatarImage = UIImageView()
+    var tableOptions = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        topImage.image = UIImage(named: "green")
+        self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
     }
     
