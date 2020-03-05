@@ -37,16 +37,22 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
         ovalCollection.reloadData()
         
         detailBtn.setTitle("Acerca de \(detailPark.name)", for: .normal)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showBookView), name: NSNotification.Name("userCanBook"), object: nil)
         // Do any additional setup after loading the view.
     }
     
     @objc func buyNowAction(){
-        guard UserDefaults.isUserRegistered == .registered else{
+        guard UserDefaults.isUserRegistered == .registered || UserDefaults.isUserRegistered == .guest else{
             print("Necesita registrarse")
             TabbarViewController.shared.showModalNeedLoginView()
             return
         }
         
+        self.showBookView()
+    }
+    
+    @objc func showBookView(){
         self.navigationController?.pushViewController(BookViewController(), animated: true)
     }
     

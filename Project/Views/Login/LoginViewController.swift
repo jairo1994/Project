@@ -38,19 +38,19 @@ class LoginViewController: UIViewController {
             return
         }
         
+        Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a) \(self.user.name!) \(self.user.lastname!)", type: .success)
         self.finishedProcess(user: self.user, state: .registered)
     }
     
     func finishedProcess(user: UserModel, state: userState){
-        Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a) \(self.user.name!) \(self.user.lastname!)", type: .success)
         UserDefaults.setUserInfo(user)
         UserDefaults.setIsUserRegistered(state)
         self.postChange()
     }
     
     @IBAction func guest(_ sender: Any) {
+        Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a)", type: .success)
         self.finishedProcess(user: UserModel(), state: .guest)
-        self.postChange()
     }
     
     @IBAction func register(_ sender: Any) {
