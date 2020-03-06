@@ -52,34 +52,6 @@
           "id": 3,
           "itHasAdditionalCost": true
         }]
-      },
-      {
-        "name": "Lo que no te debes perder",
-        "id": 1,
-        "activities":[{
-          "name": "Rio del paraiso",
-          "img": "rio",
-          "desc": "Goza del encanto del Río del Paraíso desde la comodidad de una balsa. Navega por las aguas cristalinas de este río que atraviesa los paisajes del Sendero de la Selva Tropical. En tu recorrido puedes llegar a observar cangrejos azules, iguanas y pecaríes.",
-          "horario": "8:30 AM - 5:30 PM",
-          "id": 1,
-          "itHasAdditionalCost": false
-        },
-        {
-          "name": "Rios subterraneos",
-          "img": "subterraneo",
-          "desc": "Sumérgete en ríos subterráneos de aguas frescas y cristalinas provenientes del interior de la tierra, y recorre un laberinto de cuevas y túneles iluminados por luz natural, proveniente de los respiraderos.\n\nDurante el trayecto vas a observar formaciones de coral fosilizadas en la roca, muestra de los miles de años en los que este lugar fue parte del mar.",
-          "horario": "8:30 AM - 5:30 PM",
-          "id": 2,
-          "itHasAdditionalCost": false
-        },
-        {
-          "name": "Mundo de niños",
-          "img": "worldchindren",
-          "desc": "Mundo de Niños es un área especial para niños en Xcaret donde los menores de 12 años viven grandes aventuras en el Majestuoso Paraíso de México.",
-          "horario": "8:30 AM - 5:30 PM",
-          "id": 3,
-          "itHasAdditionalCost": true
-        }]
       }]
     },
     {
@@ -116,7 +88,7 @@
           "img": "tirolesa",
           "desc": "Podrás experimentar la sensación de volar en dos circuitos de tirolesas, incluyendo la más alta de la Riviera Maya, conducir en dos rutas a través de la selva en un vehículo anfibio y pasar por cavernas inundadas y puentes colgantes; remar nadar o caminar por un río de estalactitas, mientras observas escenarios subterráneos incomparables y experimentar un divertido hamacuatizaje en un cenote.",
           "horario": "9:00 AM - 4:45 PM",
-          "id": 4,
+          "id": 6,
           "itHasAdditionalCost": false
         },
         {
@@ -124,7 +96,7 @@
           "img": "hamaca",
           "desc": "Nos tomamos la libertad de combinar una hamaca con una tirolesa que acuatiza en un cenote para que vivas una de las creaciones más divertidas del parque Xplor.\n\nEso es lo que hace especial a este lugar, su versatilidad, ya que puedes disfrutar de cavernas, ríos subterráneos, selva y hasta cenotes, todo en el mismo lugar y con las actividades más emocionantes.",
           "horario": "9:00 AM - 4:45 PM",
-          "id": 5,
+          "id": 7,
           "itHasAdditionalCost": true
         },
         {
@@ -132,7 +104,7 @@
           "img": "anfibio",
           "desc": "Nos tomamos la libertad de combinar una hamaca con una tirolesa que acuatiza en un cenote para que vivas una de las creaciones más divertidas del parque Xplor.\n\nEso es lo que hace especial a este lugar, su versatilidad, ya que puedes disfrutar de cavernas, ríos subterráneos, selva y hasta cenotes, todo en el mismo lugar y con las actividades más emocionantes.",
           "horario": "9:00 AM - 4:45 PM",
-          "id": 6,
+          "id": 7,
           "itHasAdditionalCost": false
         }]
       }]
@@ -171,7 +143,7 @@
           "img": "papalote",
           "desc": "En Xel-Há, ¡también hay peces en el aire! Como una actividad relajante para toda la familia se ofrece esta inspiradora opción, lo más cercano a que el hombre llegue a manejar a los pájaros o a dirigir un pez. A través de esta divertida actividad volarás con la imaginación y disfrutarás de la fuerza del viento y la brisa en tu rostro. Se lleva a cabo en el área de El Faro con previa reservación en Atención al Visitante.",
           "horario": "3:30 PM - 4:30 PM",
-          "id": 7,
+          "id": 8,
           "itHasAdditionalCost": false
         },
         {

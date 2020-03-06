@@ -92,7 +92,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         GeneralService.primaryColor = UIColor(hexString: GeneralService.parks[indexPath.item].primaryColor)
         self.navigationController?.pushViewController(yourVC, animated: true)
-    }
+    }   
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = parksCollectionView.dequeueReusableCell(withReuseIdentifier: "ParckCollectionViewCell", for: indexPath) as? ParckCollectionViewCell else { return UICollectionViewCell() }
