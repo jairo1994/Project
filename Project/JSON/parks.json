@@ -19,9 +19,42 @@
       "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
       "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
       "Sendero de la selva tropical."],
+      "recomendations": ["Debes traer impreso tu comprobante de compra.",
+      "Usa ropa cómoda de playa y traje de baño.",
+      "Trae toalla y una muda extra.",
+      "Tus bloqueadores y bronceadores solo deben contener óxido de titanio y óxido de zinc para su uso en el parque. En caso de no cumplir con este requisito, a la entrada hay un módulo donde podrás intercambiar tu bloqueador por una muestra libre de químicos; tu bloqueador te será devuelto a la salida.",
+      "Lleva efectivo o tarjeta para comprar souvenirs, realizar alguna Actividad Opcional o adquirir las fotos de tu visita."],
       "primaryColor": "339900",
       "category": [{
         "name": "Lo más nuevo",
+        "id": 1,
+        "activities":[{
+          "name": "Rio del paraiso",
+          "img": "rio",
+          "desc": "Goza del encanto del Río del Paraíso desde la comodidad de una balsa. Navega por las aguas cristalinas de este río que atraviesa los paisajes del Sendero de la Selva Tropical. En tu recorrido puedes llegar a observar cangrejos azules, iguanas y pecaríes.",
+          "horario": "8:30 AM - 5:30 PM",
+          "id": 1,
+          "itHasAdditionalCost": false
+        },
+        {
+          "name": "Rios subterraneos",
+          "img": "subterraneo",
+          "desc": "Sumérgete en ríos subterráneos de aguas frescas y cristalinas provenientes del interior de la tierra, y recorre un laberinto de cuevas y túneles iluminados por luz natural, proveniente de los respiraderos.\n\nDurante el trayecto vas a observar formaciones de coral fosilizadas en la roca, muestra de los miles de años en los que este lugar fue parte del mar.",
+          "horario": "8:30 AM - 5:30 PM",
+          "id": 2,
+          "itHasAdditionalCost": false
+        },
+        {
+          "name": "Mundo de niños",
+          "img": "worldchindren",
+          "desc": "Mundo de Niños es un área especial para niños en Xcaret donde los menores de 12 años viven grandes aventuras en el Majestuoso Paraíso de México.",
+          "horario": "8:30 AM - 5:30 PM",
+          "id": 3,
+          "itHasAdditionalCost": true
+        }]
+      },
+      {
+        "name": "Lo que no te debes perder",
         "id": 1,
         "activities":[{
           "name": "Rio del paraiso",
@@ -69,6 +102,11 @@
       "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
       "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
       "Sendero de la selva tropical."],
+      "recomendations": ["Debes traer impreso tu comprobante de compra.",
+      "Usa ropa cómoda de playa y traje de baño.",
+      "Trae toalla y una muda extra.",
+      "Tus bloqueadores y bronceadores solo deben contener óxido de titanio y óxido de zinc para su uso en el parque. En caso de no cumplir con este requisito, a la entrada hay un módulo donde podrás intercambiar tu bloqueador por una muestra libre de químicos; tu bloqueador te será devuelto a la salida.",
+      "Lleva efectivo o tarjeta para comprar souvenirs, realizar alguna Actividad Opcional o adquirir las fotos de tu visita."],
       "primaryColor": "ff6600",
       "category": [{
         "name": "Actividades aereas",
@@ -119,6 +157,11 @@
       "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
       "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
       "Sendero de la selva tropical."],
+      "recomendations": ["Debes traer impreso tu comprobante de compra.",
+      "Usa ropa cómoda de playa y traje de baño.",
+      "Trae toalla y una muda extra.",
+      "Tus bloqueadores y bronceadores solo deben contener óxido de titanio y óxido de zinc para su uso en el parque. En caso de no cumplir con este requisito, a la entrada hay un módulo donde podrás intercambiar tu bloqueador por una muestra libre de químicos; tu bloqueador te será devuelto a la salida.",
+      "Lleva efectivo o tarjeta para comprar souvenirs, realizar alguna Actividad Opcional o adquirir las fotos de tu visita."],
       "primaryColor": "0488d0",
       "category": [{
         "name": "Actividades por descubrir",

@@ -21,6 +21,7 @@ struct ParkModel: Codable {
     var address: String
     var category: [CategoryModel]
     var included: [String]
+    var recomendations: [String]
     var primaryColor: String
     
     init(){
@@ -36,10 +37,11 @@ struct ParkModel: Codable {
         address = ""
         category = [CategoryModel]()
         included = [String]()
+        recomendations = [String]()
         primaryColor = ""
     }
     
-    init(idPark:Int, name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel], included: [String], primaryColor: String){
+    init(idPark:Int, name:String, slogan:String, imgthumb:String, desc:String, img:String, schedule:String, latitude:Double, longitude:Double, address:String, category: [CategoryModel], included: [String], recomendations: [String], primaryColor: String){
         self.idPark = idPark
         self.name = name
         self.slogan = slogan
@@ -53,6 +55,7 @@ struct ParkModel: Codable {
         self.category = category
         self.included = included
         self.primaryColor = primaryColor
+        self.recomendations = recomendations
     }
     
     func getSpecificActivityBy(id: Int, Callback: @escaping(_ activity: ActivityModel, _ slogan: String, _ idCategory: Int)->Void){

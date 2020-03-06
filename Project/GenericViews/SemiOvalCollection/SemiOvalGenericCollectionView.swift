@@ -51,7 +51,6 @@ class SemiOvalGenericCollectionView: UICollectionView, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? SemiOvalGenericCollectionViewCell else { return UICollectionViewCell() }
         
-        
         cell.image.image = UIImage(named: self.items[indexPath.item].img)
         cell.label.text = self.items[indexPath.item].name
         

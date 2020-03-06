@@ -25,6 +25,9 @@ extension AboutParkViewController{
         scrollView.addSubview(included)
         included.translatesAutoresizingMaskIntoConstraints = false
         
+        scrollView.addSubview(recomendations)
+        recomendations.translatesAutoresizingMaskIntoConstraints = false
+        
         scrollView.addSubview(includedTextView)
         includedTextView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -45,7 +48,15 @@ extension AboutParkViewController{
         labelAddress.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         labelAddress.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
-        includedTextView.topAnchor.constraint(equalTo: mapView.bottomAnchor, constant: 24).isActive = true
+        included.topAnchor.constraint(equalTo: labelAddress.bottomAnchor, constant: 16).isActive = true
+        included.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        included.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5).isActive = true
+        
+        recomendations.topAnchor.constraint(equalTo: labelAddress.bottomAnchor, constant: 16).isActive = true
+        recomendations.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        recomendations.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5).isActive = true
+        
+        includedTextView.topAnchor.constraint(equalTo: included.bottomAnchor, constant: 24).isActive = true
         includedTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         includedTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         

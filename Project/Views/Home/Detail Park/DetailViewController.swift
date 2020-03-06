@@ -35,8 +35,11 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
         self.detailPark = TabbarViewController.shared.detailPark
         topImage.image = UIImage(named: detailPark.img)
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
+        
         collection.items = detailPark.category.first!.activities
         ovalCollection.items = detailPark.category.first!.activities
+        
+        
         collection.reloadData()
         ovalCollection.reloadData()
         
