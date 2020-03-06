@@ -104,7 +104,7 @@
           "img": "anfibio",
           "desc": "Nos tomamos la libertad de combinar una hamaca con una tirolesa que acuatiza en un cenote para que vivas una de las creaciones más divertidas del parque Xplor.\n\nEso es lo que hace especial a este lugar, su versatilidad, ya que puedes disfrutar de cavernas, ríos subterráneos, selva y hasta cenotes, todo en el mismo lugar y con las actividades más emocionantes.",
           "horario": "9:00 AM - 4:45 PM",
-          "id": 7,
+          "id": 8,
           "itHasAdditionalCost": false
         }]
       }]
@@ -143,7 +143,7 @@
           "img": "papalote",
           "desc": "En Xel-Há, ¡también hay peces en el aire! Como una actividad relajante para toda la familia se ofrece esta inspiradora opción, lo más cercano a que el hombre llegue a manejar a los pájaros o a dirigir un pez. A través de esta divertida actividad volarás con la imaginación y disfrutarás de la fuerza del viento y la brisa en tu rostro. Se lleva a cabo en el área de El Faro con previa reservación en Atención al Visitante.",
           "horario": "3:30 PM - 4:30 PM",
-          "id": 8,
+          "id": 9,
           "itHasAdditionalCost": false
         },
         {
@@ -151,7 +151,7 @@
           "img": "vivero",
           "desc": "El Vivero de Xel-Há es hogar de una gran variedad de plantas nativas. Nuestro Vivero se basa en proyectos para la conservación de la vegetación de la reserva natural, así como de especies en peligro de extinción. Todas las plantas del Vivero Xel-Há, tienen un valor histórico que data de la antigua cultura maya, y que son de vital importancia hoy en día, para las comunidades de la Península de Yucatán.",
           "horario": "3:30 PM - 4:30 PM",
-          "id": 8,
+          "id": 10,
           "itHasAdditionalCost": false
         },
         {
@@ -159,7 +159,7 @@
           "img": "esnorquel",
           "desc": "Practicar snorkel es en definitiva una de las actividades preferidas de los turistas que visitan el Caribe mexicano. En esta Maravilla Natural podrás observar más de 90 especies marinas como peces ángel, cirujanos, rubias, damiselas, loros, pargos, chernas, sargentos, una familia de rayas, peces globo, algunas barracudas y el caracol rosa, una especie protegida que habita en la Caleta de Xel-Há.",
           "horario": "3:30 PM - 4:30 PM",
-          "id": 9,
+          "id": 11,
           "itHasAdditionalCost": true
         }]
       }]
