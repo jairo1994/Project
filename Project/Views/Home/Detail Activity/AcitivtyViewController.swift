@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AcitivtyViewController: GenericScrollViewController {
+class ActivityViewController: GenericScrollViewController {
     
     var detailActivity = ActivityModel()
     var subtitle = ""
@@ -27,6 +27,7 @@ class AcitivtyViewController: GenericScrollViewController {
         let btn = UIButton(type: .system)
         btn.setImage(UIImage(named: "map-position"), for: .normal)
         btn.tintColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+        btn.addTarget(self, action: #selector(showMapView), for: .touchUpInside)
         return btn
     }()
     
@@ -65,6 +66,13 @@ class AcitivtyViewController: GenericScrollViewController {
         self.setInformationPark()
         self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func showMapView(){
+        let vc = MapViewController()
+        vc.lat = TabbarViewController._shared.detailPark.latitude
+        vc.long = TabbarViewController._shared.detailPark.longitude
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func updateHeartButton(){

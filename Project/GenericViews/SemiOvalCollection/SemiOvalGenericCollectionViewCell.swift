@@ -25,6 +25,8 @@ class SemiOvalGenericCollectionViewCell: UICollectionViewCell {
         label.layer.shadowOpacity = 1.0
         label.layer.shadowOffset = CGSize(width: 1.5, height: 1.5)
         label.layer.masksToBounds = false
+        self.backgroundColor = .white
+        self.contentView.backgroundColor = .white
     }
     
 }

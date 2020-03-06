@@ -20,12 +20,11 @@ class LikesViewController: GenericScrollViewController {
         
         return img
     }()
-    var labelInfoNotSaved: UILabel = {
-        
-    }
+    var labelInfoNotSaved = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        labelInfoNotSaved.text = "Aun no tiene actividades guardads en favoritos"
+        labelInfoNotSaved.numberOfLines = 0
         tableViewActivitiesLiked.delegate = self
         tableViewActivitiesLiked.dataSource = self
         tableViewActivitiesLiked.register(UINib(nibName: likedCellidentifier, bundle: nil), forCellReuseIdentifier: likedCellidentifier)
@@ -41,8 +40,6 @@ class LikesViewController: GenericScrollViewController {
     }
     
     func findLikedActivities(){
-        self.scrollView.removeFromSuperview()
-        self.addSubviews(methodOfSubViews: { self.addMyViews() })
         
         activitiesLiked = [ActivityModel]()
         GeneralService.arrayIdsOfActivititesLiked.forEach({ (activity) in
@@ -52,6 +49,8 @@ class LikesViewController: GenericScrollViewController {
             }
         })
         
+        self.scrollView.removeFromSuperview()
+        self.addSubviews(methodOfSubViews: { self.addMyViews() })
         tableViewActivitiesLiked.reloadData()
     }
     

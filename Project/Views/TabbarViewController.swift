@@ -23,9 +23,9 @@ class TabbarViewController: UITabBarController {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
         GeneralService.arrayIdsOfActivititesLiked = UserDefaults.activitiesThatUSerLike
-//        if UserDefaults.isUserRegistered != .registered || UserDefaults.isUserRegistered != .guest{
-//           UserDefaults.setIsUserRegistered(.login)
-//        }
+        if UserDefaults.userInfo.name == nil{
+           UserDefaults.setIsUserRegistered(.login)
+        }
         
         tabBar.barTintColor = UIColor.white
         tabBar.tintColor = GeneralService.primaryColor

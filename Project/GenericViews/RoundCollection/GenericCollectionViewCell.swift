@@ -23,6 +23,8 @@ class GenericCollectionViewCell: UICollectionViewCell {
     
     override func draw(_ rect: CGRect) { //Your code should go here.
         super.draw(rect)
+        self.backgroundColor = .white
+        self.contentView.backgroundColor = .white
         image.layer.cornerRadius = (self.contentView.frame.width * 0.6) / 2
     }
 }

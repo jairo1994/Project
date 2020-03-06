@@ -11,7 +11,6 @@ import UIKit
 class ActivityLikedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var category: UILabel!
     @IBOutlet weak var isIncluded: UILabel!
     @IBOutlet weak var imagePark: UIImageView!
     override func awakeFromNib() {

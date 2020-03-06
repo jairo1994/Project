@@ -28,12 +28,6 @@
                         <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actividad esencial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dG-Ap-H99">
-                        <rect key="frame" x="114" y="26.5" width="198" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incluido en tu entrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcV-nh-D0h">
                         <rect key="frame" x="114" y="85.5" width="166" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -53,11 +47,8 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="5dG-Ap-H99" firstAttribute="trailing" secondItem="qJr-vg-ZXR" secondAttribute="trailing" id="08h-sd-jP7"/>
-                    <constraint firstItem="5dG-Ap-H99" firstAttribute="leading" secondItem="qJr-vg-ZXR" secondAttribute="leading" id="C9d-Xf-XfZ"/>
-                    <constraint firstItem="5dG-Ap-H99" firstAttribute="top" secondItem="qJr-vg-ZXR" secondAttribute="bottom" id="LzT-oP-JdR"/>
                     <constraint firstAttribute="trailing" secondItem="qJr-vg-ZXR" secondAttribute="trailing" constant="8" id="Mv3-HM-gZ3"/>
-                    <constraint firstItem="VcV-nh-D0h" firstAttribute="leading" secondItem="5dG-Ap-H99" secondAttribute="leading" id="dWE-J1-dED"/>
+                    <constraint firstItem="VcV-nh-D0h" firstAttribute="leading" secondItem="qJr-vg-ZXR" secondAttribute="leading" id="OZQ-0d-2Y0"/>
                     <constraint firstItem="qJr-vg-ZXR" firstAttribute="leading" secondItem="qpm-Uk-5R4" secondAttribute="trailing" constant="8" id="eEM-7v-jbj"/>
                     <constraint firstItem="qJr-vg-ZXR" firstAttribute="top" secondItem="qpm-Uk-5R4" secondAttribute="top" id="i9e-l7-zv1"/>
                     <constraint firstItem="VcV-nh-D0h" firstAttribute="bottom" secondItem="qpm-Uk-5R4" secondAttribute="bottom" id="oFP-n3-dUe"/>
@@ -73,7 +64,6 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="category" destination="5dG-Ap-H99" id="3hT-dO-Vjt"/>
                 <outlet property="imagePark" destination="qpm-Uk-5R4" id="DfH-BK-tkK"/>
                 <outlet property="isIncluded" destination="VcV-nh-D0h" id="Qid-7t-3Ej"/>
                 <outlet property="name" destination="qJr-vg-ZXR" id="gTu-ee-fqZ"/>

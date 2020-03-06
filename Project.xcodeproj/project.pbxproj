@@ -32,7 +32,6 @@
 		2D1155032410106200499AEB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EB2410106200499AEB /* CategoryModel.swift */; };
 		2D1155042410106200499AEB /* ParkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154EC2410106200499AEB /* ParkModel.swift */; };
 		2D1155052410106200499AEB /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1154ED2410106200499AEB /* ActivityModel.swift */; };
-		2DA09E35241130950043BE13 /* palace.json in Resources */ = {isa = PBXBuildFile; fileRef = 2DA09E34241130950043BE13 /* palace.json */; };
 		2DA09E37241131C30043BE13 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E36241131C30043BE13 /* UserModel.swift */; };
 		2DA09E3A2411445F0043BE13 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E392411445F0043BE13 /* Alerts.swift */; };
 		2DA09E3E24114B240043BE13 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA09E3C24114B240043BE13 /* BookViewController.swift */; };
@@ -68,6 +67,7 @@
 		2DFA87F82410580E00200D05 /* AcitivtyViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */; };
 		388032EA62A1B2461C5B6448 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */; };
 		AD1CAA122410A79400AE8242 /* parks.json in Resources */ = {isa = PBXBuildFile; fileRef = AD1CAA112410A79300AE8242 /* parks.json */; };
+		AD99861C2411DF5F00897CF7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99861B2411DF5F00897CF7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +98,6 @@
 		2D1154EB2410106200499AEB /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		2D1154EC2410106200499AEB /* ParkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkModel.swift; sourceTree = "<group>"; };
 		2D1154ED2410106200499AEB /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
-		2DA09E34241130950043BE13 /* palace.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palace.json; sourceTree = "<group>"; };
 		2DA09E36241131C30043BE13 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2DA09E392411445F0043BE13 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		2DA09E3C24114B240043BE13 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +135,7 @@
 		90B0BCB2751B1FA2F9933355 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 		9948FFE5FE91A8A1DE6C0BD1 /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1CAA112410A79300AE8242 /* parks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parks.json; sourceTree = "<group>"; };
+		AD99861B2411DF5F00897CF7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +332,7 @@
 			children = (
 				2DFA87F5241057FE00200D05 /* AcitivtyViewController.swift */,
 				2DFA87F72410580E00200D05 /* AcitivtyViewController+Constraints.swift */,
+				AD99861B2411DF5F00897CF7 /* MapViewController.swift */,
 			);
 			path = "Detail Activity";
 			sourceTree = "<group>";
@@ -383,7 +384,6 @@
 		AD1CAA102410A75300AE8242 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				2DA09E34241130950043BE13 /* palace.json */,
 				AD1CAA112410A79300AE8242 /* parks.json */,
 			);
 			path = JSON;
@@ -455,7 +455,6 @@
 				2DFA87DB2410393F00200D05 /* SemiOvalGenericCollectionViewCell.xib in Resources */,
 				2DFA87DD2410393F00200D05 /* SemiOvalGenericCollectionView.xib in Resources */,
 				2D1154BE24100FC600499AEB /* LaunchScreen.storyboard in Resources */,
-				2DA09E35241130950043BE13 /* palace.json in Resources */,
 				2D1154BB24100FC600499AEB /* Assets.xcassets in Resources */,
 				2DFA87CE241032A300200D05 /* GenericRoundCollectionView.xib in Resources */,
 				2DA09E4F2411B5FA0043BE13 /* ActivityLikedTableViewCell.xib in Resources */,
@@ -548,6 +547,7 @@
 				2D1154AF24100FC500499AEB /* AppDelegate.swift in Sources */,
 				2D1155032410106200499AEB /* CategoryModel.swift in Sources */,
 				2DFA87EA24104FEC00200D05 /* RegisterViewController.swift in Sources */,
+				AD99861C2411DF5F00897CF7 /* MapViewController.swift in Sources */,
 				2D1154B124100FC500499AEB /* SceneDelegate.swift in Sources */,
 				2DFA87E02410451F00200D05 /* UserDefaultsService.swift in Sources */,
 				2DFA87E42410478900200D05 /* LoginViewController.swift in Sources */,

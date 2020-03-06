@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension AcitivtyViewController{
+extension ActivityViewController{
     func addMyViews(){
         scrollView.addSubview(informationTextView)
         informationTextView.translatesAutoresizingMaskIntoConstraints = false

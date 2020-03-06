@@ -78,7 +78,7 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     
     func showActivityDetail(id: Int){
         self.detailPark.getSpecificActivityBy(id: id, Callback: { (activity, subtitle, idCategory) in
-            let vc = AcitivtyViewController()
+            let vc = ActivityViewController()
             vc.detailActivity = activity
             vc.subtitle = subtitle
             vc.idCategory = idCategory

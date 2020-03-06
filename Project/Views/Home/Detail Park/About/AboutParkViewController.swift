@@ -71,7 +71,7 @@ class AboutParkViewController: GenericScrollViewController {
         
         let attrString2 = NSMutableAttributedString()
         for i in 0..<self.detailPark.included.count{
-            attrString2.appendWith(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), ofSize: UIFont.systemFont(ofSize: 18), text: ".- \(self.detailPark.included[i])\n")
+            attrString2.appendWith(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), ofSize: UIFont.systemFont(ofSize: 18), text: " - \(self.detailPark.included[i])\n")
         }
         self.includedTextView.attributedText = attrString2
         
@@ -81,8 +81,6 @@ class AboutParkViewController: GenericScrollViewController {
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: detailPark.latitude, longitude: detailPark.latitude)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
         marker.map = mapView
     }
     

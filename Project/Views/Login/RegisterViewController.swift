@@ -55,6 +55,8 @@ class RegisterViewController: UIViewController {
         }
         
         UserDefaults.setUserInfo(UserModel(name: textname, lastname: textlastname, country: textcountry, provincia: textstate, telmovil: textphone, mail: textmail, password: textpassword))
+        UserDefaults.setIsUserRegistered(.registered)
+        NotificationCenter.default.post(name: NSNotification.Name("statusUserHasChanged"), object: nil)
         
     }
    

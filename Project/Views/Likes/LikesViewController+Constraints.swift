@@ -12,7 +12,7 @@ import UIKit
 extension LikesViewController{
     
     func addMyViews(){
-        if GeneralService.arrayIdsOfActivititesLiked.count > 0{
+        if activitiesLiked.count > 0{
             self.scrollView.addSubview(tableViewActivitiesLiked)
             tableViewActivitiesLiked.translatesAutoresizingMaskIntoConstraints = false
         }else{
@@ -27,7 +27,7 @@ extension LikesViewController{
     }
     
     func addMyConstraints(){
-        if GeneralService.arrayIdsOfActivititesLiked.count > 0{
+        if activitiesLiked.count > 0{
             tableViewActivitiesLiked.topAnchor.constraint(equalTo: curvedView.topAnchor, constant: 60).isActive = true
             tableViewActivitiesLiked.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
             tableViewActivitiesLiked.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
@@ -35,11 +35,12 @@ extension LikesViewController{
         }else{
             imageInfoNotSaved.topAnchor.constraint(equalTo: curvedView.topAnchor, constant: 60).isActive = true
             imageInfoNotSaved.centerXAnchor.constraint(equalTo: curvedView.centerXAnchor).isActive = true
-            imageInfoNotSaved.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
-            imageInfoNotSaved.heightAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
+            imageInfoNotSaved.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.35).isActive = true
+            imageInfoNotSaved.heightAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.35).isActive = true
             
-            labelInfoNotSaved.topAnchor.constraint(equalTo: imageInfoNotSaved.topAnchor, constant: 8).isActive = true
+            labelInfoNotSaved.topAnchor.constraint(equalTo: imageInfoNotSaved.bottomAnchor, constant: 24).isActive = true
             labelInfoNotSaved.centerXAnchor.constraint(equalTo: imageInfoNotSaved.centerXAnchor).isActive = true
+            labelInfoNotSaved.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
         }
     }
 }
@@ -52,7 +53,6 @@ extension LikesViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableViewActivitiesLiked.dequeueReusableCell(withIdentifier: likedCellidentifier, for: indexPath) as? ActivityLikedTableViewCell else { return UITableViewCell() }
         cell.name.text = self.activitiesLiked[indexPath.item].name
-        cell.category.text = self.activitiesLiked[indexPath.item].name
         cell.isIncluded.text = self.activitiesLiked[indexPath.item].itHasAdditionalCost ? "Con costo adicional" : "Incluido en tu entrada"
         cell.imagePark.image = UIImage(named: self.activitiesLiked[indexPath.item].img)
         return cell
@@ -63,7 +63,10 @@ extension LikesViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = ActivityViewController()
+        vc.detailActivity = self.activitiesLiked[indexPath.item]
+        self.navigationController?.pushViewController(vc, animated: true)
+        tableViewActivitiesLiked.deselectRow(at: indexPath, animated: true)
     }
     
     
