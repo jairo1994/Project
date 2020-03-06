@@ -77,10 +77,11 @@ class DetailViewController: GenericScrollViewController, ChangeViewsProtocol  {
     }
     
     func showActivityDetail(id: Int){
-        self.detailPark.getSpecificActivityBy(id: id, Callback: { (activity, subtitle) in
+        self.detailPark.getSpecificActivityBy(id: id, Callback: { (activity, subtitle, idCategory) in
             let vc = AcitivtyViewController()
             vc.detailActivity = activity
             vc.subtitle = subtitle
+            vc.idCategory = idCategory
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         })

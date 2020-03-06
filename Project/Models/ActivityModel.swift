@@ -38,5 +38,6 @@ struct ActivityModel: Codable {
 
 struct activitySaved: Codable, DefaultsSerializable{
     var idPark: Int
+    var idCategory: Int
     var idActivity: Int
 }

@@ -13,6 +13,16 @@ class LikesViewController: GenericScrollViewController {
     let likedCellidentifier = "ActivityLikedTableViewCell"
     var tableViewActivitiesLiked = UITableView()
     var activitiesLiked = [ActivityModel]()
+    var idPark = 0
+    var imageInfoNotSaved: UIImageView = {
+        let img = UIImageView()
+        img.image = UIImage(named: "error")
+        
+        return img
+    }()
+    var labelInfoNotSaved: UILabel = {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,13 +30,29 @@ class LikesViewController: GenericScrollViewController {
         tableViewActivitiesLiked.dataSource = self
         tableViewActivitiesLiked.register(UINib(nibName: likedCellidentifier, bundle: nil), forCellReuseIdentifier: likedCellidentifier)
         
-        GeneralService.parks.
-        for i in 0..<GeneralService.arrayIdsOfActivititesLiked.count{
-            activitiesLiked =
-        }
+        idPark = TabbarViewController._shared.detailPark.idPark
         topImage.image = UIImage(named: TabbarViewController._shared.detailPark.img)
-        self.addSubviews(methodOfSubViews: { self.addMyViews() })
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.findLikedActivities()
+    }
+    
+    func findLikedActivities(){
+        self.scrollView.removeFromSuperview()
+        self.addSubviews(methodOfSubViews: { self.addMyViews() })
+        
+        activitiesLiked = [ActivityModel]()
+        GeneralService.arrayIdsOfActivititesLiked.forEach({ (activity) in
+            
+            if let park = GeneralService.parks.first(where: {$0.idPark == idPark})?.category.first(where: { $0.id == activity.idCategory})?.activities.first(where: { $0.id == activity.idActivity}){
+                activitiesLiked.append(park)
+            }
+        })
+        
+        tableViewActivitiesLiked.reloadData()
     }
     
 

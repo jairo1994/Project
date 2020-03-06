@@ -1,5 +1,6 @@
 [
     {
+      "idPark": 1,
       "name": "Xcaret",
       "slogan": "Majestuoso paraíso de México",
       "imgthumb": "xcaret-thumb",
@@ -18,7 +19,7 @@
       "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
       "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
       "Sendero de la selva tropical."],
-      "primaryColor": "a20633",
+      "primaryColor": "339900",
       "category": [{
         "name": "Lo más nuevo",
         "id": 1,
@@ -49,6 +50,7 @@
       }]
     },
     {
+      "idPark": 2,
       "name": "Xplor",
       "slogan": "El parque con tirolesas más visitado del mundo",
       "imgthumb": "xplor-thumb",
@@ -67,10 +69,10 @@
       "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
       "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
       "Sendero de la selva tropical."],
-      "primaryColor": "a20633",
+      "primaryColor": "ff6600",
       "category": [{
         "name": "Actividades aereas",
-        "id": 1,
+        "id": 2,
         "activities":[{
           "name": "Tirolesas",
           "img": "tirolesa",
@@ -98,6 +100,7 @@
       }]
     },
     {
+      "idPark": 3,
       "name": "Xel-ha",
       "slogan": "Un cielo más cerca de ti",
       "imgthumb": "xelha-thumb",
@@ -116,10 +119,10 @@
       "Mundo de Niños, un divertido espacio únicamente para los más pequeños.",
       "Espectáculo Ecuestre, Voladores de Papantla y Danzas Prehispánicas.",
       "Sendero de la selva tropical."],
-      "primaryColor": "a20633",
+      "primaryColor": "0488d0",
       "category": [{
         "name": "Actividades por descubrir",
-        "id": 1,
+        "id": 3,
         "activities":[{
           "name": "Vuela tu papalote",
           "img": "papalote",

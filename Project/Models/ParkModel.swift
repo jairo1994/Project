@@ -55,11 +55,11 @@ struct ParkModel: Codable {
         self.primaryColor = primaryColor
     }
     
-    func getSpecificActivityBy(id: Int, Callback: @escaping(_ activity: ActivityModel, _ slogan: String)->Void){
+    func getSpecificActivityBy(id: Int, Callback: @escaping(_ activity: ActivityModel, _ slogan: String, _ idCategory: Int)->Void){
         category.forEach { (category) in
             category.activities.forEach { (activity) in
                 if activity.id == id{
-                    Callback(activity, category.name)
+                    Callback(activity, category.name, category.id)
                     return
                 }
             }

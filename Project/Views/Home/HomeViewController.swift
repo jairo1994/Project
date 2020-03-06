@@ -28,7 +28,7 @@ class HomeViewController: UIViewController{
         /*El servicio general de la app tiene la función de descargar la información antes de proceder a entrar al home*/
         
         let bundle = Bundle(for: type(of: self))
-        guard let url = bundle.url(forResource: "palace", withExtension: "json"),
+        guard let url = bundle.url(forResource: "parks", withExtension: "json"),
             let data = try? Data(contentsOf: url) else {
                 return
         }

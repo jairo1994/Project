@@ -12,12 +12,7 @@ class AcitivtyViewController: GenericScrollViewController {
     
     var detailActivity = ActivityModel()
     var subtitle = ""
-    let btnMap: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.setImage(UIImage(named: "map-position"), for: .normal)
-        btn.tintColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
-        return btn
-    }()
+    var idCategory = 0
     let scheduleInfo = Button.normalButton()
     let btnLike = UIButton(type: .system)
     var userLikeThisActivity = false
@@ -27,6 +22,14 @@ class AcitivtyViewController: GenericScrollViewController {
         lbl.font = UIFont.systemFont(ofSize: 18)
         return lbl
     }()
+    
+    let btnMap: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setImage(UIImage(named: "map-position"), for: .normal)
+        btn.tintColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+        return btn
+    }()
+    
     let informationTextView: UITextView = {
         let txt = UITextView()
         txt.isSelectable = false
@@ -80,7 +83,7 @@ class AcitivtyViewController: GenericScrollViewController {
                 UserDefaults.setAllActivitiesThatUserLike(GeneralService.arrayIdsOfActivititesLiked)
             }
         }else{
-            UserDefaults.addActivityThatUserLike(activitySaved(idPark: TabbarViewController._shared.detailPark.idPark, idActivity: self.detailActivity.id))
+            UserDefaults.addActivityThatUserLike(activitySaved(idPark: TabbarViewController._shared.detailPark.idPark, idCategory: idCategory, idActivity: self.detailActivity.id))
             GeneralService.arrayIdsOfActivititesLiked = UserDefaults.activitiesThatUSerLike
         }
         
