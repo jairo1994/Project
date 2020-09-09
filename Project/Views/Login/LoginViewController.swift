@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
             return
         }
         
-        guard mail == "angelica", password == "xcaret2020" else{
+        guard mail == "", password == "" else{
             Alerts.showAlert(title: "Ups", subtitle: "Su usuario o contraseña son incorrectos", type: .danger)
             return
         }
