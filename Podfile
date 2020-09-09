@@ -6,8 +6,8 @@ target 'Project' do
   use_frameworks!
 
   # Pods for Project
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
+  pod 'GoogleMaps', '~> 3.9.0'
+  pod 'GooglePlaces', '3.9.0'
   pod 'SwiftyUserDefaults', '~> 5.0'
   pod 'IQKeyboardManagerSwift', '~> 6.2.1'
   pod 'TextFieldEffects'
