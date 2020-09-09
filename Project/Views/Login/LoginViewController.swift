@@ -28,10 +28,10 @@ class LoginViewController: UIViewController {
         let mail = txtMail.text!
         let password = txtPassword.text!
         
-        guard mail.trimmingCharacters(in: .whitespaces).count > 0, password.trimmingCharacters(in: .whitespaces).count > 0 else{
+        /*guard mail.trimmingCharacters(in: .whitespaces).count > 0, password.trimmingCharacters(in: .whitespaces).count > 0 else{
             Alerts.showAlert(title: "Ups", subtitle: "Por favor, ingrese ambos campos para continuar", type: .warning)
             return
-        }
+        }*/
         
         /*guard mail == "", password == "" else{
             Alerts.showAlert(title: "Ups", subtitle: "Su usuario o contraseña son incorrectos", type: .danger)
