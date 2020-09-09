@@ -33,10 +33,10 @@ class LoginViewController: UIViewController {
             return
         }
         
-        guard mail == "", password == "" else{
+        /*guard mail == "", password == "" else{
             Alerts.showAlert(title: "Ups", subtitle: "Su usuario o contraseña son incorrectos", type: .danger)
             return
-        }
+        }*/
         
         Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a) \(self.user.name!) \(self.user.lastname!)", type: .success)
         self.finishedProcess(user: self.user, state: .registered)
