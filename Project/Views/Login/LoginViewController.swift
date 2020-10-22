@@ -13,9 +13,12 @@ class LoginViewController: UIViewController {
     var user = UserModel(name: "Angelica", lastname: "Can Canche", country: "México", provincia: "QRoo", telmovil: "998 1451632", mail: "acan@xcaret.com", password: "xcaret-2020")
     @IBOutlet weak var txtMail: KaedeTextField!
     @IBOutlet weak var txtPassword: KaedeTextField!
+    @IBOutlet weak var viewHeight: NSLayoutConstraint!
+    @IBOutlet weak var stackContainer: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Inicio de sesión"
         txtMail.placeholderColor = GeneralService.primaryColor
         txtPassword.placeholderColor = GeneralService.primaryColor
         // Do any additional setup after loading the view.
@@ -40,6 +43,30 @@ class LoginViewController: UIViewController {
         
         Alerts.showAlert(title: "Listo!", subtitle: "Bienvenido(a) \(self.user.name!) \(self.user.lastname!)", type: .success)
         self.finishedProcess(user: self.user, state: .registered)
+    }
+    
+    func updateViewHeight(){
+        self.viewHeight.constant = stackContainer.frame.height
+        self.view.setNeedsLayout()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.updateViewHeight()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        guard self.tabBarController?.selectedIndex == 2 else {
+            return
+        }
+        
+        coordinator.animate(alongsideTransition: { (_) in
+            self.updateViewHeight()
+        }) { (_) in
+            
+        }
     }
     
     func finishedProcess(user: UserModel, state: userState){

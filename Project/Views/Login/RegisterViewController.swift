@@ -20,6 +20,9 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var mail: JiroTextField!
     @IBOutlet weak var password: JiroTextField!
     @IBOutlet weak var confirmPassword: JiroTextField!
+    @IBOutlet weak var viewHeight: NSLayoutConstraint!
+    @IBOutlet weak var stackContent: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +36,12 @@ class RegisterViewController: UIViewController {
         confirmPassword.placeholderColor = GeneralService.primaryColor
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.viewHeight.constant = stackContent.frame.height
+        self.view.setNeedsLayout()
     }
 
     @IBAction func goBack(_ sender: Any) {
